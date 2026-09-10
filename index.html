@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#24483e">
+  <meta name="description" content="给两个人的家常晚餐灵感。选主菜、自动配餐、查看菜谱，轻松决定今晚吃什么。">
+  <title>今晚吃什么 · 两个人，好好吃饭</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='12' fill='%2324483e'/%3E%3Ctext x='20' y='28' font-size='26' text-anchor='middle' fill='%23f6f3eb'%3E食%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="./css/style.css">
+  <script type="module" src="./js/app.js"></script>
+</head>
+<body>
+  <main class="app">
+    <header class="header">
+      <div class="brand"><span class="brand-mark" aria-hidden="true">食</span><span>两个人的餐桌</span></div>
+      <nav aria-label="个人菜谱"><button class="text-button" id="favorites-button">我的收藏 <span id="favorite-count">0</span></button><button class="text-button" id="history-button">最近吃过</button></nav>
+    </header>
+    <section class="intro" aria-labelledby="page-title">
+      <p class="eyebrow">把晚餐的选择，变简单</p>
+      <h1 id="page-title">今晚吃什么<span class="title-dot">。</span></h1>
+      <p class="subtitle">2人份 · 家常菜 · 减脂友好 · 米饭可以吃</p>
+    </section>
+    <section aria-label="选择晚餐" class="chooser">
+      <div class="mode-bar">
+        <button class="mode-button" data-action="select-main"><span aria-hidden="true">＋</span>选主菜</button>
+        <button class="mode-button active" data-mode="random" aria-pressed="true"><span aria-hidden="true">↻</span>随机一套</button>
+        <button class="mode-button" data-mode="light" aria-pressed="false"><span aria-hidden="true">◌</span>清淡一点</button>
+        <button class="mode-button" data-mode="quick" aria-pressed="false"><span aria-hidden="true">◷</span>快速一点</button>
+      </div>
+      <label class="favorite-setting"><input type="checkbox" id="prefer-favorites"><span>优先推荐收藏菜</span></label>
+    </section>
+    <section class="menu" aria-labelledby="menu-title" aria-busy="true" id="menu-section">
+      <div class="section-heading"><div><p class="eyebrow">TONIGHT’S MENU</p><h2 id="menu-title">今天，就吃这一套</h2></div><span class="servings">2人份</span></div>
+      <div id="meal-summary" class="meal-summary">正在准备今晚的菜单…</div>
+      <div id="dish-grid" class="dish-grid"><div class="loading-card">厨房准备中，请稍候…</div></div>
+      <div id="meal-notes" class="meal-notes"></div>
+      <div class="swap-bar" aria-label="调整菜单"><button data-swap="main">换主菜</button><button data-swap="side">换配菜</button><button data-swap="soup">换汤</button><button data-action="reroll">整套重抽 <span aria-hidden="true">↻</span></button></div>
+      <button id="confirm-meal" class="primary-button confirm-button">这套今晚就吃 <span aria-hidden="true">✓</span></button>
+      <p class="confirm-help" id="confirm-help">记下这顿晚餐，下次多一点新鲜感。</p>
+    </section>
+    <footer class="footer"><span>一荤一素，一碗热汤。</span><span>好好吃饭，不用纠结。</span></footer>
+  </main>
+  <dialog id="panel" aria-labelledby="panel-title"><div class="panel-header"><div><p class="eyebrow" id="panel-kicker">今晚的餐桌</p><h2 id="panel-title">菜谱</h2></div><button class="close-button" id="close-panel" aria-label="关闭弹窗">×</button></div><div id="panel-content"></div></dialog>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <noscript><p class="noscript">请开启浏览器 JavaScript，才能生成菜单和查看菜谱。</p></noscript>
+</body>
+</html>
