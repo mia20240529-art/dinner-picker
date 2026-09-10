@@ -33,6 +33,12 @@
     <section class="menu" aria-labelledby="menu-title" aria-busy="true" id="menu-section">
       <div class="section-heading"><div><p class="eyebrow">TONIGHT’S MENU</p><h2 id="menu-title">今天，就吃这一套</h2></div><span class="servings">2人份</span></div>
       <div id="meal-summary" class="meal-summary">正在准备今晚的菜单…</div>
+      <div id="shared-banner" class="shared-banner" hidden role="status"></div>
+      <div class="share-actions" aria-label="分享当前菜单">
+        <button id="copy-menu" class="share-button">复制菜单</button>
+        <button id="copy-link" class="share-button">复制分享链接</button>
+        <button id="share-menu" class="share-button primary-share" hidden>分享给朋友</button>
+      </div>
       <div id="dish-grid" class="dish-grid"><div class="loading-card">厨房准备中，请稍候…</div></div>
       <div id="meal-notes" class="meal-notes"></div>
       <div class="swap-bar" aria-label="调整菜单"><button data-swap="main">换主菜</button><button data-swap="side">换配菜</button><button data-swap="soup">换汤</button><button data-action="reroll">整套重抽 <span aria-hidden="true">↻</span></button></div>
