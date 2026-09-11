@@ -1,6 +1,7 @@
 import {validateDishes,generateMeal,mealTime,mealKey,MODES} from './engine.js';
 import {loadState,saveState} from './storage.js';
 import {parseSharedMeal,buildShareUrl,formatMealText} from './share.js';
+import {searchDishes,SEARCH_FILTERS} from './search.js';
 const $=s=>document.querySelector(s);
 const escape=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const labels={main:'主菜',side:'配菜',soup:'汤',staple:'主食'};
@@ -31,7 +32,7 @@ function render(){
   const main=dish(meal.main),side=dish(meal.side),soup=dish(meal.soup),notes=[];
   if(side.starchy||main.starchy||(meal.includeSoup&&soup.starchy))notes.push('<p class="starch-note">本餐已有一定淀粉，米饭可适量减少。</p>');
   if(main.oily||main.tags.includes('重口'))notes.push('<p>主菜口味较浓，已搭配清淡配菜与汤。</p>');
-  if(main.brothy)notes.push(`<p>主菜汤汁丰富，另做汤可选。</p><label class="favorite-setting"><input type="checkbox" id="include-soup" ${meal.includeSoup?'checked':''}><span>今晚也做这道汤</span></label>`);
+  if(main.brothy||main.tags.includes('咖喱'))notes.push(`<p>这道主菜可不另配汤，米饭照常搭配。</p><label class="favorite-setting"><input type="checkbox" id="include-soup" ${meal.includeSoup?'checked':''}><span>今晚也做这道汤</span></label>`);
   if(meal.mode==='quick')notes.push('<p>按菜肴依次制作、米饭快煮约25分钟估算；普通煮饭程序可能更久。</p>');
   $('#meal-notes').innerHTML=notes.join('');
   const confirmed=isConfirmed();$('#confirm-meal').disabled=confirmed;
@@ -51,9 +52,23 @@ function openPanel(title,kicker,html){
   $('#panel').scrollTop=0;$('#close-panel').focus();
 }
 function closePanel(){$('#panel').close();if(returnFocus?.isConnected)returnFocus.focus();}
+let searchQuery='',searchFilter='all',searchRecipe=false;
+function renderSearchResults(){
+  const results=searchDishes(dishes,searchQuery,searchFilter);
+  $('#search-count').textContent=`找到 ${results.length} 道菜 · 每道菜默认2人份`;
+  $('#search-results').innerHTML=results.length?results.map(d=>`<article class="search-result"><button class="picker-item" data-search-recipe="${d.id}"><span>${escape(d.name)}</span><small>${escape(d.category_label)} · ${d.time}分钟${d.light?' · 清淡':''}</small></button>${d.roles.includes('main')?`<button class="search-pair" data-main="${d.id}">用这道菜配一套</button>`:''}</article>`).join(''):'<p class="empty">没有找到合适的菜，试试其他关键词或选择“全部”。</p>';
+  document.querySelectorAll('[data-search-filter]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.searchFilter===searchFilter)));
+}
+function openSearch(){
+  searchRecipe=false;
+  openPanel('搜索菜谱','找到今天想吃的味道',`<label class="search-label" for="recipe-search">菜名、食材、分类或标签</label><input id="recipe-search" type="search" placeholder="试试牛肉、虾、咖喱、四季豆…" value="${escape(searchQuery)}" autocomplete="off"><div class="search-filters" aria-label="筛选菜谱">${Object.entries(SEARCH_FILTERS).map(([key,label])=>`<button data-search-filter="${key}" aria-pressed="${key===searchFilter}">${label}</button>`).join('')}</div><p id="search-count" role="status" aria-live="polite"></p><div id="search-results" class="picker-list"></div>`);
+  renderSearchResults();$('#recipe-search').focus();
+}
 function recipe(id){
   const d=dish(id);if(!d)return;const saved=state.favorites.includes(id),list=items=>items.map(x=>`<li>${escape(x)}</li>`).join('');
   openPanel(d.name,'把这一道，做好吃',`<div class="recipe-topline"><span>${escape(d.category_label)}</span><span>· 2人份</span><span>· 预计${d.time}分钟</span><span>· ${escape(d.difficulty)}</span></div><div class="recipe-flags"><span class="badge">${d.light?'清淡':'家常口味'}</span><span class="badge">${d.oily?'偏油':'不偏油'}</span><span class="badge">${d.starchy?'含较多淀粉':'非高淀粉菜'}</span></div><div class="recipe-columns"><section class="recipe-section"><h3>食材</h3><ul>${list(d.ingredients)}</ul></section><section class="recipe-section"><h3>调料</h3><ul>${list(d.seasonings)}</ul></section></div><section class="recipe-section"><h3>做法</h3><ol class="steps">${list(d.steps)}</ol></section><section class="recipe-section"><h3>可替换食材</h3><ul>${list(d.substitutions)}</ul></section><section class="recipe-section"><h3>小备注</h3><p class="recipe-note">${escape(d.note||'调料可按口味微调；所列用量适合2人。')}<br>1茶匙约5ml，1汤匙约15ml。</p></section><button class="favorite-button ${saved?'saved':''}" data-favorite="${d.id}" aria-pressed="${saved}">${saved?'♥ 已收藏 · 点击取消':'♡ 收藏这道菜'}</button>`);
+  if(searchRecipe)$('#panel-content').insertAdjacentHTML('afterbegin','<button class="search-back" id="back-to-search">← 返回搜索结果</button>');
+  if(d.roles.includes('main'))$('#panel-content').insertAdjacentHTML('beforeend',`<button class="search-pair recipe-pair" data-main="${d.id}">用这道菜配一套</button>`);
 }
 function selectMain(){
   const groups=new Map();for(const d of dishes.filter(d=>d.roles.includes('main'))){if(!groups.has(d.category_label))groups.set(d.category_label,[]);groups.get(d.category_label).push(d);}
@@ -79,15 +94,19 @@ async function shareMenu(){
 function installEvents(){
   document.addEventListener('click',e=>{
     const b=e.target.closest('button');if(!b||b.disabled)return;
+    if(b.id==='search-button'||b.id==='back-to-search'){openSearch();return;}
+    if(b.dataset.searchFilter){searchFilter=b.dataset.searchFilter;renderSearchResults();return;}
+    if(b.dataset.searchRecipe){searchRecipe=true;recipe(b.dataset.searchRecipe);return;}
     if(b.dataset.mode){generate({mode:b.dataset.mode});return;}
     if(b.dataset.swap){generate({swap:b.dataset.swap});return;}
-    if(b.dataset.recipe){recipe(b.dataset.recipe);return;}
+    if(b.dataset.recipe){searchRecipe=false;recipe(b.dataset.recipe);return;}
     if(b.dataset.main){if(generate({mainId:b.dataset.main}))closePanel();return;}
     if(b.dataset.favorite){const id=b.dataset.favorite,index=state.favorites.indexOf(id);if(index<0)state.favorites.push(id);else state.favorites.splice(index,1);persist();render();b.classList.toggle('saved',index<0);b.setAttribute('aria-pressed',String(index<0));b.textContent=index<0?'♥ 已收藏 · 点击取消':'♡ 收藏这道菜';toast(index<0?'已加入我的收藏。':'已取消收藏。');return;}
     if(b.dataset.action==='select-main')selectMain();if(b.dataset.action==='reroll')generate();
     if(b.id==='favorites-button')favorites();if(b.id==='history-button')history();if(b.id==='close-panel')closePanel();if(b.id==='confirm-meal')confirmMeal();
     if(b.id==='copy-menu')void copyMenu();if(b.id==='copy-link')void copyLink();if(b.id==='share-menu')void shareMenu();
   });
+  document.addEventListener('input',e=>{if(e.target.id==='recipe-search'){searchQuery=e.target.value;renderSearchResults();}});
   document.addEventListener('change',e=>{
     if(e.target.id==='prefer-favorites'){state.preferFavorites=e.target.checked;persist();if(state.preferFavorites&&!state.favorites.length)toast('收藏还是空的，先从完整菜库为你推荐。');}
     if(e.target.id==='include-soup'){const previous=state.current.includeSoup;state.current.includeSoup=e.target.checked;if(state.current.mode==='quick'&&mealTime(state.current,dishes)>30){state.current.includeSoup=previous;toast('加上汤会超过30分钟，可切换随机模式再加汤。');}rememberGenerated();render();}
@@ -120,7 +139,7 @@ async function init(){
   }catch(error){
     $('#menu-section').setAttribute('aria-busy','false');$('#meal-summary').textContent='菜单暂时没有准备好';
     $('#dish-grid').innerHTML='<div class="error-card">无法加载菜库，请刷新重试。若从文件夹打开，请使用本地预览或部署后的网址。<br><button id="retry-load">重新加载</button></div>';
-    $('#retry-load').onclick=()=>location.reload();document.querySelectorAll('.mode-button,.swap-bar button,#confirm-meal,#favorites-button,#history-button,#prefer-favorites').forEach(b=>b.disabled=true);
+    $('#retry-load').onclick=()=>location.reload();document.querySelectorAll('.mode-button,.swap-bar button,#confirm-meal,#favorites-button,#history-button,#search-button,#prefer-favorites').forEach(b=>b.disabled=true);
     console.error('Dinner initialization failed:',error);
   }
 }

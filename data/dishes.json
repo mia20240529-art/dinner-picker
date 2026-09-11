@@ -2500,5 +2500,3524 @@
     ],
     "note": "25分钟按电饭煲快煮程序估算，普通程序可能需35—50分钟，请以锅具为准。份量可按食量调整。",
     "brothy": false
+  },
+  {
+    "id": "coconut_chicken_hotpot",
+    "name": "椰子鸡火锅",
+    "category": "chicken",
+    "category_label": "鸡肉类",
+    "role": "main",
+    "roles": [
+      "main"
+    ],
+    "servings": 2,
+    "time": 45,
+    "difficulty": "简单",
+    "light": true,
+    "oily": false,
+    "starchy": false,
+    "ingredients": [
+      "鸡块500g",
+      "无糖椰子水600ml",
+      "椰肉80g",
+      "玉米半根",
+      "姜10g"
+    ],
+    "seasonings": [
+      "盐2g",
+      "生抽2茶匙",
+      "青柠半个"
+    ],
+    "steps": [
+      "鸡块浸去血水，玉米切段，椰肉切条",
+      "锅中放椰子水、清水300ml、姜片、椰肉和玉米，煮开",
+      "放入鸡块，煮沸撇沫，盖盖小火煮25—30分钟，至鸡肉中心完全熟透",
+      "加盐调味，生抽与青柠汁拌成蘸汁，连锅上桌"
+    ],
+    "tags": [
+      "鸡肉",
+      "火锅",
+      "椰香",
+      "粤式",
+      "玉米"
+    ],
+    "avoid_pair_tags": [],
+    "substitutions": [
+      "玉米可换白萝卜，鸡块可换去骨鸡腿。"
+    ],
+    "note": "已有汤底，另配汤可选；搭配米饭和清爽蔬菜。",
+    "brothy": true
+  },
+  {
+    "id": "curry_chicken",
+    "name": "咖喱鸡",
+    "category": "chicken",
+    "category_label": "鸡肉类",
+    "role": "main",
+    "roles": [
+      "main"
+    ],
+    "servings": 2,
+    "time": 35,
+    "difficulty": "简单",
+    "light": false,
+    "oily": false,
+    "starchy": true,
+    "ingredients": [
+      "鸡腿肉300g",
+      "土豆150g",
+      "胡萝卜100g",
+      "洋葱100g"
+    ],
+    "seasonings": [
+      "咖喱块25g",
+      "油2茶匙"
+    ],
+    "steps": [
+      "鸡腿肉和蔬菜切块",
+      "锅中热油，炒香洋葱，下鸡肉炒至表面变色",
+      "加土豆、胡萝卜和清水400ml，煮开后小火炖20分钟，至鸡肉熟透、土豆软熟",
+      "关小火放入咖喱块搅化，再煮3分钟至浓稠"
+    ],
+    "tags": [
+      "鸡肉",
+      "咖喱",
+      "土豆",
+      "日式"
+    ],
+    "avoid_pair_tags": [],
+    "substitutions": [
+      "鸡腿肉可换鸡胸肉，避免久煮发柴。"
+    ],
+    "note": "默认搭配米饭与清爽配菜，汤可选；咖喱块含盐，先尝再调味。",
+    "brothy": false
+  },
+  {
+    "id": "curry_beef",
+    "name": "咖喱牛肉",
+    "category": "beef",
+    "category_label": "牛肉类",
+    "role": "main",
+    "roles": [
+      "main"
+    ],
+    "servings": 2,
+    "time": 25,
+    "difficulty": "简单",
+    "light": false,
+    "oily": false,
+    "starchy": false,
+    "ingredients": [
+      "牛肉片250g",
+      "洋葱100g",
+      "彩椒150g"
+    ],
+    "seasonings": [
+      "咖喱粉2茶匙",
+      "生抽1茶匙",
+      "淀粉1茶匙",
+      "油2茶匙",
+      "盐1g"
+    ],
+    "steps": [
+      "牛肉逆纹切薄片，用生抽、淀粉及1汤匙水腌10分钟",
+      "洋葱和彩椒切块，热油炒香洋葱，加咖喱粉小火炒匀",
+      "加清水180ml煮3分钟，再下彩椒",
+      "铺入牛肉片煮至完全熟透，加盐，稍收汁"
+    ],
+    "tags": [
+      "牛肉",
+      "咖喱",
+      "快手",
+      "彩椒"
+    ],
+    "avoid_pair_tags": [],
+    "substitutions": [
+      "牛肉片可换牛里脊薄片。"
+    ],
+    "note": "默认搭配米饭和清爽配菜，汤可选。",
+    "brothy": false
+  },
+  {
+    "id": "curry_brisket",
+    "name": "咖喱牛腩",
+    "category": "beef",
+    "category_label": "牛肉类",
+    "role": "main",
+    "roles": [
+      "main"
+    ],
+    "servings": 2,
+    "time": 110,
+    "difficulty": "简单",
+    "light": false,
+    "oily": false,
+    "starchy": true,
+    "ingredients": [
+      "牛腩400g",
+      "土豆150g",
+      "胡萝卜100g",
+      "洋葱100g",
+      "姜10g"
+    ],
+    "seasonings": [
+      "咖喱块30g",
+      "油2茶匙"
+    ],
+    "steps": [
+      "牛腩切块冷水下锅，煮开3分钟后捞出冲净",
+      "热油炒香洋葱姜片，放入牛腩翻炒，加热水800ml",
+      "盖盖小火炖70分钟，加入土豆胡萝卜再炖20分钟，至牛腩软烂",
+      "咖喱块放入搅化，小火收浓，汤少时补热水"
+    ],
+    "tags": [
+      "牛肉",
+      "咖喱",
+      "炖菜",
+      "土豆"
+    ],
+    "avoid_pair_tags": [],
+    "substitutions": [
+      "土豆可换南瓜，最后15分钟再放。"
+    ],
+    "note": "咖喱配米饭，另配清爽蔬菜，汤可选。",
+    "brothy": false
+  },
+  {
+    "id": "curry_shrimp",
+    "name": "咖喱虾",
+    "category": "shrimp",
+    "category_label": "虾类",
+    "role": "main",
+    "roles": [
+      "main"
+    ],
+    "servings": 2,
+    "time": 20,
+    "difficulty": "简单",
+    "light": false,
+    "oily": false,
+    "starchy": false,
+    "ingredients": [
+      "虾300g",
+      "洋葱100g",
+      "彩椒100g",
+      "椰奶100ml"
+    ],
+    "seasonings": [
+      "咖喱粉2茶匙",
+      "油2茶匙",
+      "盐1g"
+    ],
+    "steps": [
+      "虾去虾线，洋葱和彩椒切块",
+      "热油炒软洋葱，小火炒香咖喱粉",
+      "加入椰奶和水100ml煮开，放入彩椒煮2分钟",
+      "加入虾煮4—6分钟至虾肉完全不透明、熟透，加盐调味"
+    ],
+    "tags": [
+      "虾",
+      "咖喱",
+      "快手",
+      "椰香"
+    ],
+    "avoid_pair_tags": [],
+    "substitutions": [
+      "带壳虾可换虾仁，适当缩短煮制时间。"
+    ],
+    "note": "默认搭配米饭和清爽配菜，汤可选。",
+    "brothy": false
+  },
+  {
+    "id": "coconut_curry_chicken",
+    "name": "椰香咖喱鸡",
+    "category": "chicken",
+    "category_label": "鸡肉类",
+    "role": "main",
+    "roles": [
+      "main"
+    ],
+    "servings": 2,
+    "time": 35,
+    "difficulty": "简单",
+    "light": false,
+    "oily": false,
+    "starchy": false,
+    "ingredients": [
+      "鸡腿肉300g",
+      "洋葱100g",
+      "彩椒100g",
+      "椰奶150ml",
+      "姜5g"
+    ],
+    "seasonings": [
+      "咖喱粉2茶匙",
+      "油2茶匙",
+      "盐2g"
+    ],
+    "steps": [
+      "鸡腿肉切块，洋葱切丝，彩椒切块",
+      "热油炒香姜和洋葱，下鸡块炒至表面变色",
+      "小火加入咖喱粉炒匀，倒入椰奶和水200ml，盖盖煮15分钟",
+      "加入彩椒再煮5分钟，至鸡肉中心熟透，加盐调味"
+    ],
+    "tags": [
+      "鸡肉",
+      "咖喱",
+      "椰香",
+      "东南亚风味"
+    ],
+    "avoid_pair_tags": [],
+    "substitutions": [
+      "椰奶可用无糖牛奶替代，改为温和奶香口味。"
+    ],
+    "note": "配米饭和清爽配菜，汤可选；椰奶按150ml用量即可。",
+    "brothy": false
+  },
+  {
+    "id": "tomato_brisket_hotpot",
+    "name": "番茄牛腩锅",
+    "category": "beef",
+    "category_label": "牛肉类",
+    "role": "main",
+    "roles": [
+      "main"
+    ],
+    "servings": 2,
+    "time": 110,
+    "difficulty": "简单",
+    "light": false,
+    "oily": false,
+    "starchy": false,
+    "ingredients": [
+      "牛腩400g",
+      "番茄400g",
+      "白萝卜200g",
+      "洋葱80g",
+      "姜10g"
+    ],
+    "seasonings": [
+      "油2茶匙",
+      "生抽2茶匙",
+      "盐2g"
+    ],
+    "steps": [
+      "牛腩切块冷水焯去血沫，番茄和白萝卜切块",
+      "热油炒香洋葱姜片，炒软一半番茄，下牛腩",
+      "加热水900ml和生抽，小火炖75分钟，中途按需补热水",
+      "加入白萝卜和剩余番茄，再炖20分钟至软熟，加盐"
+    ],
+    "tags": [
+      "牛肉",
+      "一锅菜",
+      "炖菜",
+      "番茄"
+    ],
+    "avoid_pair_tags": [],
+    "substitutions": [
+      "白萝卜可换娃娃菜，最后8分钟加入。"
+    ],
+    "note": "汤汁可一起食用，无需强制再配汤。",
+    "brothy": true
+  },
+  {
+    "id": "sour_beef_hotpot",
+    "name": "酸汤肥牛",
+    "category": "beef",
+    "category_label": "牛肉类",
+    "role": "main",
+    "roles": [
+      "main"
+    ],
+    "servings": 2,
+    "time": 25,
+    "difficulty": "简单",
+    "light": false,
+    "oily": false,
+    "starchy": false,
+    "ingredients": [
+      "肥牛片250g",
+      "金针菇150g",
+      "番茄200g",
+      "豆芽100g",
+      "姜5g"
+    ],
+    "seasonings": [
+      "油1茶匙",
+      "米醋2茶匙",
+      "生抽1茶匙",
+      "盐1g"
+    ],
+    "steps": [
+      "金针菇去根，番茄切碎，豆芽洗净",
+      "肥牛片沸水中煮至熟透后捞出",
+      "锅中热油炒香姜和番茄，加水600ml，放入金针菇和豆芽煮5分钟",
+      "加入熟肥牛、生抽、米醋和盐，煮开2分钟即可"
+    ],
+    "tags": [
+      "牛肉",
+      "酸汤",
+      "火锅",
+      "番茄"
+    ],
+    "avoid_pair_tags": [],
+    "substitutions": [
+      "肥牛片可换瘦牛肉薄片，煮至中心熟透。"
+    ],
+    "note": "可按喜好加少量辣椒；本菜有汤，另配汤可选。",
+    "brothy": true
+  },
+  {
+    "id": "cabbage_pork_casserole",
+    "name": "白菜肉片砂锅",
+    "category": "pork",
+    "category_label": "猪肉类",
+    "role": "main",
+    "roles": [
+      "main"
+    ],
+    "servings": 2,
+    "time": 30,
+    "difficulty": "简单",
+    "light": true,
+    "oily": false,
+    "starchy": false,
+    "ingredients": [
+      "瘦猪肉200g",
+      "白菜300g",
+      "北豆腐200g",
+      "鲜香菇80g",
+      "姜10g"
+    ],
+    "seasonings": [
+      "油1茶匙",
+      "生抽2茶匙",
+      "淀粉1茶匙",
+      "盐1g"
+    ],
+    "steps": [
+      "猪肉切薄片，用生抽淀粉和少量水腌10分钟",
+      "白菜切段，豆腐切块，鲜香菇切片",
+      "砂锅放油姜片，铺白菜、香菇和豆腐，加水500ml煮10分钟",
+      "下肉片划散再煮5分钟至熟透，加盐"
+    ],
+    "tags": [
+      "猪肉",
+      "砂锅",
+      "白菜",
+      "豆腐"
+    ],
+    "avoid_pair_tags": [],
+    "substitutions": [
+      "白菜可换娃娃菜。"
+    ],
+    "note": "连汤带菜食用，汤可选。",
+    "brothy": true
+  },
+  {
+    "id": "mushroom_chicken_casserole",
+    "name": "香菇鸡块煲",
+    "category": "chicken",
+    "category_label": "鸡肉类",
+    "role": "main",
+    "roles": [
+      "main"
+    ],
+    "servings": 2,
+    "time": 45,
+    "difficulty": "简单",
+    "light": false,
+    "oily": false,
+    "starchy": false,
+    "ingredients": [
+      "鸡块400g",
+      "鲜香菇150g",
+      "胡萝卜100g",
+      "姜10g",
+      "葱1根"
+    ],
+    "seasonings": [
+      "油2茶匙",
+      "生抽2茶匙",
+      "老抽半茶匙",
+      "盐1g"
+    ],
+    "steps": [
+      "鸡块焯水撇去浮沫，香菇对半切，胡萝卜切块",
+      "热油炒香姜葱，放鸡块翻炒",
+      "加香菇、胡萝卜、生抽、老抽和热水500ml，小火炖25分钟",
+      "确认鸡肉熟透，开盖煮5分钟略收汁，加盐"
+    ],
+    "tags": [
+      "鸡肉",
+      "砂锅",
+      "菌菇",
+      "炖菜"
+    ],
+    "avoid_pair_tags": [],
+    "substitutions": [
+      "鲜香菇可换杏鲍菇。"
+    ],
+    "note": "保留少量汤汁，另配汤可选。",
+    "brothy": true
+  },
+  {
+    "id": "winter_melon_ribs_pot",
+    "name": "冬瓜排骨煲",
+    "category": "pork",
+    "category_label": "猪肉类",
+    "role": "main",
+    "roles": [
+      "main"
+    ],
+    "servings": 2,
+    "time": 70,
+    "difficulty": "简单",
+    "light": true,
+    "oily": false,
+    "starchy": false,
+    "ingredients": [
+      "排骨400g",
+      "冬瓜300g",
+      "姜15g",
+      "葱1根"
+    ],
+    "seasonings": [
+      "盐2g",
+      "料酒1茶匙"
+    ],
+    "steps": [
+      "排骨冷水入锅，加料酒，煮开撇沫后捞出",
+      "排骨和姜放入锅，加热水900ml，小火炖40分钟",
+      "冬瓜去皮切厚块，下锅再炖15分钟至软熟",
+      "加盐，确认排骨熟透，撒葱花"
+    ],
+    "tags": [
+      "猪肉",
+      "排骨",
+      "冬瓜",
+      "一锅菜"
+    ],
+    "avoid_pair_tags": [],
+    "substitutions": [
+      "冬瓜可换白萝卜，适当延长炖煮。"
+    ],
+    "note": "配米饭与一道蔬菜即可，另配汤可选。",
+    "brothy": true
+  },
+  {
+    "id": "shrimp_tofu_casserole",
+    "name": "鲜虾豆腐煲",
+    "category": "shrimp",
+    "category_label": "虾类",
+    "role": "main",
+    "roles": [
+      "main"
+    ],
+    "servings": 2,
+    "time": 25,
+    "difficulty": "简单",
+    "light": true,
+    "oily": false,
+    "starchy": false,
+    "ingredients": [
+      "虾仁250g",
+      "嫩豆腐250g",
+      "娃娃菜200g",
+      "姜5g"
+    ],
+    "seasonings": [
+      "油1茶匙",
+      "生抽1茶匙",
+      "盐1g"
+    ],
+    "steps": [
+      "虾仁去虾线，豆腐切块，娃娃菜切段",
+      "热油炒香姜，放娃娃菜炒软",
+      "加入豆腐和水400ml，煮开后小火煮6分钟",
+      "下虾仁煮4—5分钟至熟透，加生抽和盐"
+    ],
+    "tags": [
+      "虾",
+      "豆腐",
+      "砂锅",
+      "快手"
+    ],
+    "avoid_pair_tags": [],
+    "substitutions": [
+      "虾仁可换鱼片，煮至完全熟透。"
+    ],
+    "note": "汤可选，配米饭。",
+    "brothy": true
+  },
+  {
+    "id": "sauerkraut_fish_pot",
+    "name": "酸菜鱼家常版",
+    "category": "fish",
+    "category_label": "鱼类",
+    "role": "main",
+    "roles": [
+      "main"
+    ],
+    "servings": 2,
+    "time": 35,
+    "difficulty": "简单",
+    "light": false,
+    "oily": false,
+    "starchy": false,
+    "ingredients": [
+      "无刺鱼片350g",
+      "酸菜150g",
+      "豆芽150g",
+      "姜10g",
+      "蒜10g"
+    ],
+    "seasonings": [
+      "油2茶匙",
+      "淀粉1茶匙",
+      "白胡椒粉少许",
+      "盐1g"
+    ],
+    "steps": [
+      "酸菜冲洗挤干切段，鱼片用淀粉和少量水拌匀",
+      "热油炒香姜蒜和酸菜，加水650ml煮8分钟",
+      "加入豆芽煮5分钟，再逐片下鱼片",
+      "小火煮至鱼片中心完全熟透，约4—6分钟，按酸菜咸度少量加盐及胡椒"
+    ],
+    "tags": [
+      "鱼",
+      "酸菜",
+      "川味",
+      "一锅菜"
+    ],
+    "avoid_pair_tags": [],
+    "substitutions": [
+      "鱼片可用鲈鱼片或黑鱼片，挑净鱼刺。"
+    ],
+    "note": "不额外泼油，已有汤底，另配汤可选。",
+    "brothy": true
+  },
+  {
+    "id": "tomato_fish_casserole",
+    "name": "番茄鱼片砂锅",
+    "category": "fish",
+    "category_label": "鱼类",
+    "role": "main",
+    "roles": [
+      "main"
+    ],
+    "servings": 2,
+    "time": 30,
+    "difficulty": "简单",
+    "light": true,
+    "oily": false,
+    "starchy": false,
+    "ingredients": [
+      "鱼片350g",
+      "番茄300g",
+      "娃娃菜150g",
+      "姜10g"
+    ],
+    "seasonings": [
+      "油2茶匙",
+      "淀粉1茶匙",
+      "盐2g"
+    ],
+    "steps": [
+      "鱼片拌淀粉和少量水，番茄切块",
+      "锅中热油炒姜，炒软番茄",
+      "加水500ml和娃娃菜，煮8分钟至菜软",
+      "逐片下鱼片，煮至中心熟透，加盐"
+    ],
+    "tags": [
+      "鱼",
+      "番茄",
+      "砂锅",
+      "快手"
+    ],
+    "avoid_pair_tags": [],
+    "substitutions": [
+      "鱼片可换虾仁，按厚度调整时间。"
+    ],
+    "note": "汤可选；鱼片需留意细刺。",
+    "brothy": true
+  },
+  {
+    "id": "ginger_bass_casserole",
+    "name": "姜葱鲈鱼煲",
+    "category": "fish",
+    "category_label": "鱼类",
+    "role": "main",
+    "roles": [
+      "main"
+    ],
+    "servings": 2,
+    "time": 35,
+    "difficulty": "简单",
+    "light": false,
+    "oily": false,
+    "starchy": false,
+    "ingredients": [
+      "鲈鱼块450g",
+      "洋葱100g",
+      "姜25g",
+      "葱2根",
+      "蒜15g"
+    ],
+    "seasonings": [
+      "油2茶匙",
+      "生抽2茶匙",
+      "料酒1茶匙"
+    ],
+    "steps": [
+      "鲈鱼块擦干，用料酒和生抽腌10分钟",
+      "厚底锅热油，放姜蒜、洋葱炒香",
+      "铺鱼块，加热水120ml，盖盖小火焖12—15分钟",
+      "确认鱼肉完全不透明并熟透，撒葱段再焖1分钟"
+    ],
+    "tags": [
+      "鱼",
+      "鲈鱼",
+      "粤式",
+      "焖"
+    ],
+    "avoid_pair_tags": [],
+    "substitutions": [
+      "鲈鱼块可换鳜鱼块。"
+    ],
+    "note": "厚底锅即可，不必另买砂锅；留意鱼刺。",
+    "brothy": false
+  },
+  {
+    "id": "lemon_steamed_fish",
+    "name": "柠檬蒸鱼柳",
+    "category": "fish",
+    "category_label": "鱼类",
+    "role": "main",
+    "roles": [
+      "main"
+    ],
+    "servings": 2,
+    "time": 20,
+    "difficulty": "简单",
+    "light": true,
+    "oily": false,
+    "starchy": false,
+    "ingredients": [
+      "鱼柳350g",
+      "柠檬半个",
+      "姜10g",
+      "葱1根"
+    ],
+    "seasonings": [
+      "生抽2茶匙",
+      "油1茶匙",
+      "盐1g"
+    ],
+    "steps": [
+      "鱼柳擦干，加盐抹匀，姜切丝",
+      "盘中铺姜丝，放鱼柳和两片去籽柠檬",
+      "水开后蒸10—12分钟至中心完全熟透，按厚度延长",
+      "倒掉多余汁水，加生抽和油，撒葱花，挤少量柠檬汁"
+    ],
+    "tags": [
+      "鱼",
+      "蒸",
+      "快手",
+      "清淡"
+    ],
+    "avoid_pair_tags": [],
+    "substitutions": [
+      "鱼柳可换鳕鱼块。"
+    ],
+    "note": "默认2人份，盐可按口味减少，搭配米饭食用。",
+    "brothy": false
+  },
+  {
+    "id": "sweet_sour_fish",
+    "name": "糖醋鱼块少糖版",
+    "category": "fish",
+    "category_label": "鱼类",
+    "role": "main",
+    "roles": [
+      "main"
+    ],
+    "servings": 2,
+    "time": 30,
+    "difficulty": "简单",
+    "light": false,
+    "oily": false,
+    "starchy": false,
+    "ingredients": [
+      "无刺鱼块350g",
+      "彩椒100g",
+      "姜5g"
+    ],
+    "seasonings": [
+      "油3茶匙",
+      "米醋2茶匙",
+      "糖1茶匙",
+      "生抽1茶匙",
+      "淀粉2茶匙"
+    ],
+    "steps": [
+      "鱼块擦干，裹1茶匙淀粉，彩椒切块",
+      "不粘锅热油，两面煎鱼块共8—10分钟至熟透",
+      "米醋、糖、生抽、余下淀粉和水80ml调汁",
+      "锅中炒姜和彩椒，倒调汁煮稠，放回鱼块裹匀"
+    ],
+    "tags": [
+      "鱼",
+      "糖醋",
+      "快手"
+    ],
+    "avoid_pair_tags": [],
+    "substitutions": [
+      "彩椒可换黄瓜，最后放。"
+    ],
+    "note": "默认2人份，盐可按口味减少，搭配米饭食用。",
+    "brothy": false
+  },
+  {
+    "id": "ginger_shrimp",
+    "name": "葱姜炒虾",
+    "category": "shrimp",
+    "category_label": "虾类",
+    "role": "main",
+    "roles": [
+      "main"
+    ],
+    "servings": 2,
+    "time": 20,
+    "difficulty": "简单",
+    "light": false,
+    "oily": false,
+    "starchy": false,
+    "ingredients": [
+      "鲜虾350g",
+      "姜15g",
+      "葱2根"
+    ],
+    "seasonings": [
+      "油2茶匙",
+      "生抽2茶匙",
+      "料酒1茶匙"
+    ],
+    "steps": [
+      "虾剪须去虾线并擦干",
+      "热油炒香姜丝和葱白",
+      "倒入虾翻炒，加料酒、生抽和水30ml",
+      "盖盖焖3分钟后翻炒至虾肉完全熟透，撒葱绿"
+    ],
+    "tags": [
+      "虾",
+      "快手",
+      "葱姜"
+    ],
+    "avoid_pair_tags": [],
+    "substitutions": [
+      "鲜虾可换虾仁。"
+    ],
+    "note": "默认2人份，盐可按口味减少，搭配米饭食用。",
+    "brothy": false
+  },
+  {
+    "id": "peas_shrimp",
+    "name": "豌豆炒虾仁",
+    "category": "shrimp",
+    "category_label": "虾类",
+    "role": "main",
+    "roles": [
+      "main"
+    ],
+    "servings": 2,
+    "time": 20,
+    "difficulty": "简单",
+    "light": true,
+    "oily": false,
+    "starchy": false,
+    "ingredients": [
+      "虾仁250g",
+      "豌豆150g",
+      "胡萝卜80g",
+      "姜5g"
+    ],
+    "seasonings": [
+      "油2茶匙",
+      "盐2g",
+      "淀粉1茶匙"
+    ],
+    "steps": [
+      "虾仁去虾线，胡萝卜切丁",
+      "豌豆与胡萝卜沸水煮5分钟至软熟，捞出",
+      "热油炒姜，下虾仁炒至完全熟透",
+      "放豌豆胡萝卜，加盐和淀粉水炒匀"
+    ],
+    "tags": [
+      "虾",
+      "豌豆",
+      "快手"
+    ],
+    "avoid_pair_tags": [],
+    "substitutions": [
+      "豌豆可换玉米粒。"
+    ],
+    "note": "默认2人份，盐可按口味减少，搭配米饭食用。",
+    "brothy": false
+  },
+  {
+    "id": "shrimp_scrambled_eggs",
+    "name": "虾仁滑蛋",
+    "category": "shrimp",
+    "category_label": "虾类",
+    "role": "main",
+    "roles": [
+      "main"
+    ],
+    "servings": 2,
+    "time": 15,
+    "difficulty": "简单",
+    "light": true,
+    "oily": false,
+    "starchy": false,
+    "ingredients": [
+      "虾仁200g",
+      "鸡蛋3个",
+      "葱1根"
+    ],
+    "seasonings": [
+      "油2茶匙",
+      "盐1g",
+      "白胡椒粉少许"
+    ],
+    "steps": [
+      "虾仁处理干净擦干，鸡蛋加盐和1汤匙水打匀",
+      "锅中放一半油，炒虾仁至熟透后盛出",
+      "加余油，倒蛋液，小火推炒至将凝固",
+      "加入熟虾仁继续炒至蛋液凝固、全熟，撒葱花和胡椒"
+    ],
+    "tags": [
+      "虾",
+      "鸡蛋",
+      "快手"
+    ],
+    "avoid_pair_tags": [],
+    "substitutions": [
+      "虾仁可换熟鸡肉丁。"
+    ],
+    "note": "默认2人份，盐可按口味减少，搭配米饭食用。",
+    "brothy": false
+  },
+  {
+    "id": "snow_peas_beef",
+    "name": "荷兰豆炒牛肉",
+    "category": "beef",
+    "category_label": "牛肉类",
+    "role": "main",
+    "roles": [
+      "main"
+    ],
+    "servings": 2,
+    "time": 25,
+    "difficulty": "简单",
+    "light": true,
+    "oily": false,
+    "starchy": false,
+    "ingredients": [
+      "牛肉250g",
+      "荷兰豆180g",
+      "蒜10g"
+    ],
+    "seasonings": [
+      "油2茶匙",
+      "生抽2茶匙",
+      "淀粉1茶匙"
+    ],
+    "steps": [
+      "牛肉逆纹切片，用生抽、淀粉和少量水腌10分钟",
+      "荷兰豆去筋，沸水煮3分钟后捞出",
+      "热油炒蒜，下牛肉片炒至熟透",
+      "加入荷兰豆和水30ml，焖炒2分钟至豆荚完全熟透"
+    ],
+    "tags": [
+      "牛肉",
+      "荷兰豆",
+      "快手"
+    ],
+    "avoid_pair_tags": [],
+    "substitutions": [
+      "荷兰豆可换西兰花小朵，先焯熟。"
+    ],
+    "note": "默认2人份，盐可按口味减少，搭配米饭食用。",
+    "brothy": false
+  },
+  {
+    "id": "cumin_beef",
+    "name": "孜然牛肉",
+    "category": "beef",
+    "category_label": "牛肉类",
+    "role": "main",
+    "roles": [
+      "main"
+    ],
+    "servings": 2,
+    "time": 25,
+    "difficulty": "简单",
+    "light": false,
+    "oily": false,
+    "starchy": false,
+    "ingredients": [
+      "牛肉300g",
+      "洋葱120g",
+      "香菜10g"
+    ],
+    "seasonings": [
+      "油2茶匙",
+      "生抽2茶匙",
+      "孜然粉1茶匙",
+      "辣椒粉半茶匙",
+      "淀粉1茶匙"
+    ],
+    "steps": [
+      "牛肉切薄片，用生抽和淀粉腌10分钟",
+      "洋葱切丝，香菜切段",
+      "热油炒软洋葱，倒入牛肉铺散炒至熟透",
+      "加孜然粉和辣椒粉翻匀，出锅前放香菜"
+    ],
+    "tags": [
+      "牛肉",
+      "孜然",
+      "西北风味",
+      "快手"
+    ],
+    "avoid_pair_tags": [],
+    "substitutions": [
+      "香菜可换葱花，辣椒粉可省。"
+    ],
+    "note": "默认2人份，盐可按口味减少，搭配米饭食用。",
+    "brothy": false
+  },
+  {
+    "id": "king_oyster_beef",
+    "name": "杏鲍菇炒牛肉",
+    "category": "beef",
+    "category_label": "牛肉类",
+    "role": "main",
+    "roles": [
+      "main"
+    ],
+    "servings": 2,
+    "time": 25,
+    "difficulty": "简单",
+    "light": false,
+    "oily": false,
+    "starchy": false,
+    "ingredients": [
+      "牛肉250g",
+      "杏鲍菇200g",
+      "青椒80g",
+      "蒜10g"
+    ],
+    "seasonings": [
+      "油2茶匙",
+      "生抽2茶匙",
+      "淀粉1茶匙"
+    ],
+    "steps": [
+      "牛肉切片加生抽淀粉腌10分钟，杏鲍菇切片",
+      "热油炒香蒜，放杏鲍菇炒至出水再收干",
+      "把菇推到锅边，下牛肉炒散至熟透",
+      "加青椒及水30ml，翻炒3分钟"
+    ],
+    "tags": [
+      "牛肉",
+      "菌菇",
+      "青椒",
+      "快手"
+    ],
+    "avoid_pair_tags": [],
+    "substitutions": [
+      "杏鲍菇可换鲜香菇。"
+    ],
+    "note": "默认2人份，盐可按口味减少，搭配米饭食用。",
+    "brothy": false
+  },
+  {
+    "id": "green_bean_pork",
+    "name": "四季豆炒肉",
+    "category": "pork",
+    "category_label": "猪肉类",
+    "role": "main",
+    "roles": [
+      "main"
+    ],
+    "servings": 2,
+    "time": 30,
+    "difficulty": "简单",
+    "light": false,
+    "oily": false,
+    "starchy": false,
+    "ingredients": [
+      "四季豆250g",
+      "瘦猪肉200g",
+      "蒜10g"
+    ],
+    "seasonings": [
+      "油2茶匙",
+      "生抽2茶匙",
+      "淀粉1茶匙",
+      "盐1g"
+    ],
+    "steps": [
+      "四季豆去两头和筋切段，猪肉切片用生抽淀粉腌10分钟",
+      "四季豆沸水煮8—10分钟后沥干",
+      "锅热油炒蒜和肉片至熟透，加入四季豆及水60ml",
+      "盖盖焖5分钟，至豆段内外软熟，再加盐翻匀",
+      "彻底加热熟透，不可夹生；检查豆段内外软熟，未熟时继续加水焖煮。"
+    ],
+    "tags": [
+      "猪肉",
+      "四季豆",
+      "快手"
+    ],
+    "avoid_pair_tags": [],
+    "substitutions": [
+      "瘦猪肉可换鸡腿肉片。"
+    ],
+    "note": "默认2人份，盐可按口味减少，搭配米饭食用。 四季豆、豆角必须彻底加热熟透，不可夹生。",
+    "brothy": false
+  },
+  {
+    "id": "long_bean_pork",
+    "name": "豆角炒肉",
+    "category": "pork",
+    "category_label": "猪肉类",
+    "role": "main",
+    "roles": [
+      "main"
+    ],
+    "servings": 2,
+    "time": 30,
+    "difficulty": "简单",
+    "light": false,
+    "oily": false,
+    "starchy": false,
+    "ingredients": [
+      "长豆角250g",
+      "瘦猪肉200g",
+      "蒜10g"
+    ],
+    "seasonings": [
+      "油2茶匙",
+      "生抽2茶匙",
+      "淀粉1茶匙",
+      "盐1g"
+    ],
+    "steps": [
+      "长豆角去两端切段，猪肉切丝用生抽淀粉腌10分钟",
+      "豆角沸水煮8分钟，捞出",
+      "热油炒香蒜，下肉丝炒熟，加入豆角和水60ml",
+      "盖盖焖5分钟，检查豆角完全软熟，加盐炒匀",
+      "彻底加热熟透，不可夹生；检查豆段内外软熟，未熟时继续加水焖煮。"
+    ],
+    "tags": [
+      "猪肉",
+      "豆角",
+      "快手"
+    ],
+    "avoid_pair_tags": [],
+    "substitutions": [
+      "肉丝可换鸡肉丝。"
+    ],
+    "note": "默认2人份，盐可按口味减少，搭配米饭食用。 四季豆、豆角必须彻底加热熟透，不可夹生。",
+    "brothy": false
+  },
+  {
+    "id": "long_bean_beef",
+    "name": "豆角炒牛肉",
+    "category": "beef",
+    "category_label": "牛肉类",
+    "role": "main",
+    "roles": [
+      "main"
+    ],
+    "servings": 2,
+    "time": 30,
+    "difficulty": "简单",
+    "light": false,
+    "oily": false,
+    "starchy": false,
+    "ingredients": [
+      "长豆角250g",
+      "牛肉250g",
+      "姜5g",
+      "蒜10g"
+    ],
+    "seasonings": [
+      "油2茶匙",
+      "生抽2茶匙",
+      "淀粉1茶匙",
+      "盐1g"
+    ],
+    "steps": [
+      "豆角去两端切段，牛肉逆纹切丝，用生抽淀粉腌10分钟",
+      "豆角沸水煮8分钟后捞出",
+      "热油炒姜蒜和牛肉至熟透，盛出",
+      "豆角加水60ml焖5分钟至完全软熟，放回牛肉，加盐炒匀",
+      "彻底加热熟透，不可夹生；检查豆段内外软熟，未熟时继续加水焖煮。"
+    ],
+    "tags": [
+      "牛肉",
+      "豆角",
+      "快手"
+    ],
+    "avoid_pair_tags": [],
+    "substitutions": [
+      "牛肉可换猪里脊。"
+    ],
+    "note": "默认2人份，盐可按口味减少，搭配米饭食用。 四季豆、豆角必须彻底加热熟透，不可夹生。",
+    "brothy": false
+  },
+  {
+    "id": "long_bean_braised_pork",
+    "name": "豆角焖肉",
+    "category": "pork",
+    "category_label": "猪肉类",
+    "role": "main",
+    "roles": [
+      "main"
+    ],
+    "servings": 2,
+    "time": 55,
+    "difficulty": "简单",
+    "light": false,
+    "oily": false,
+    "starchy": false,
+    "ingredients": [
+      "长豆角300g",
+      "猪肩肉250g",
+      "姜10g",
+      "蒜10g"
+    ],
+    "seasonings": [
+      "油2茶匙",
+      "生抽2茶匙",
+      "老抽半茶匙",
+      "盐1g"
+    ],
+    "steps": [
+      "猪肩肉切小块，豆角去两端切段",
+      "热油炒姜蒜和肉块，加入生抽老抽及热水400ml",
+      "盖盖小火焖25分钟，加入豆角再焖15分钟，缺水时补热水",
+      "确认肉块和豆角彻底软熟后，加盐并稍收汁",
+      "彻底加热熟透，不可夹生；检查豆段内外软熟，未熟时继续加水焖煮。"
+    ],
+    "tags": [
+      "猪肉",
+      "豆角",
+      "焖"
+    ],
+    "avoid_pair_tags": [],
+    "substitutions": [
+      "猪肩肉可换排骨，需先炖至接近软熟再加豆角。"
+    ],
+    "note": "默认2人份，盐可按口味减少，搭配米饭食用。 四季豆、豆角必须彻底加热熟透，不可夹生。",
+    "brothy": false
+  },
+  {
+    "id": "green_bean_minced_chicken",
+    "name": "四季豆鸡肉碎",
+    "category": "chicken",
+    "category_label": "鸡肉类",
+    "role": "main",
+    "roles": [
+      "main"
+    ],
+    "servings": 2,
+    "time": 30,
+    "difficulty": "简单",
+    "light": true,
+    "oily": false,
+    "starchy": false,
+    "ingredients": [
+      "四季豆250g",
+      "鸡腿肉200g",
+      "蒜10g",
+      "姜5g"
+    ],
+    "seasonings": [
+      "油2茶匙",
+      "生抽2茶匙",
+      "盐1g"
+    ],
+    "steps": [
+      "四季豆去筋切小粒，鸡腿肉剁碎",
+      "豆粒沸水煮8分钟，沥干",
+      "热油炒姜蒜和鸡肉碎至熟透，下豆粒及水80ml",
+      "盖盖煮5分钟至豆粒内外软熟，加生抽盐炒匀",
+      "彻底加热熟透，不可夹生；检查豆段内外软熟，未熟时继续加水焖煮。"
+    ],
+    "tags": [
+      "鸡肉",
+      "四季豆",
+      "快手"
+    ],
+    "avoid_pair_tags": [],
+    "substitutions": [
+      "鸡腿肉可换瘦猪肉末。"
+    ],
+    "note": "默认2人份，盐可按口味减少，搭配米饭食用。 四季豆、豆角必须彻底加热熟透，不可夹生。",
+    "brothy": false
+  },
+  {
+    "id": "yuxiang_pork",
+    "name": "鱼香肉丝家常版",
+    "category": "pork",
+    "category_label": "猪肉类",
+    "role": "main",
+    "roles": [
+      "main"
+    ],
+    "servings": 2,
+    "time": 30,
+    "difficulty": "简单",
+    "light": false,
+    "oily": false,
+    "starchy": false,
+    "ingredients": [
+      "猪里脊250g",
+      "胡萝卜80g",
+      "泡发木耳80g",
+      "青椒100g",
+      "姜5g",
+      "蒜10g"
+    ],
+    "seasonings": [
+      "油2茶匙",
+      "生抽2茶匙",
+      "米醋2茶匙",
+      "糖1茶匙",
+      "淀粉2茶匙",
+      "豆瓣酱1茶匙"
+    ],
+    "steps": [
+      "猪肉切丝，用1茶匙生抽及1茶匙淀粉腌10分钟，蔬菜切丝",
+      "其余生抽淀粉加米醋糖和水60ml调汁",
+      "热油炒姜蒜与豆瓣酱，下肉丝炒熟，加入胡萝卜木耳炒4分钟",
+      "加入青椒和调汁，翻炒至所有食材熟透、汁微稠"
+    ],
+    "tags": [
+      "猪肉",
+      "鱼香",
+      "川味",
+      "快手",
+      "重口"
+    ],
+    "avoid_pair_tags": [],
+    "substitutions": [
+      "青椒可换彩椒，木耳用冷藏短时泡发后及时烹饪。"
+    ],
+    "note": "默认2人份，盐可按口味减少，搭配米饭食用。",
+    "brothy": false
+  },
+  {
+    "id": "lotus_pork",
+    "name": "藕片炒肉",
+    "category": "pork",
+    "category_label": "猪肉类",
+    "role": "main",
+    "roles": [
+      "main"
+    ],
+    "servings": 2,
+    "time": 25,
+    "difficulty": "简单",
+    "light": false,
+    "oily": false,
+    "starchy": true,
+    "ingredients": [
+      "莲藕200g",
+      "瘦猪肉200g",
+      "青椒80g",
+      "姜5g"
+    ],
+    "seasonings": [
+      "油2茶匙",
+      "生抽2茶匙",
+      "淀粉1茶匙",
+      "盐1g"
+    ],
+    "steps": [
+      "莲藕去皮切薄片，猪肉切片用生抽淀粉腌10分钟",
+      "藕片沸水煮3分钟捞出",
+      "热油炒姜和肉片至熟透",
+      "加入藕片、青椒和水40ml翻炒3分钟，加盐"
+    ],
+    "tags": [
+      "猪肉",
+      "莲藕",
+      "快手"
+    ],
+    "avoid_pair_tags": [],
+    "substitutions": [
+      "青椒可换胡萝卜薄片。"
+    ],
+    "note": "默认2人份，盐可按口味减少，搭配米饭食用。",
+    "brothy": false
+  },
+  {
+    "id": "corn_chicken",
+    "name": "玉米鸡丁",
+    "category": "chicken",
+    "category_label": "鸡肉类",
+    "role": "main",
+    "roles": [
+      "main"
+    ],
+    "servings": 2,
+    "time": 25,
+    "difficulty": "简单",
+    "light": false,
+    "oily": false,
+    "starchy": true,
+    "ingredients": [
+      "鸡腿肉250g",
+      "玉米粒150g",
+      "胡萝卜80g",
+      "姜5g"
+    ],
+    "seasonings": [
+      "油2茶匙",
+      "生抽2茶匙",
+      "淀粉1茶匙",
+      "盐1g"
+    ],
+    "steps": [
+      "鸡肉切丁用生抽淀粉腌10分钟，胡萝卜切丁",
+      "玉米和胡萝卜沸水煮5分钟，沥干",
+      "热油炒姜和鸡丁，加水40ml盖盖煮5分钟至鸡肉熟透",
+      "放玉米胡萝卜，加盐翻炒2分钟"
+    ],
+    "tags": [
+      "鸡肉",
+      "玉米",
+      "快手"
+    ],
+    "avoid_pair_tags": [],
+    "substitutions": [
+      "鸡腿肉可换鸡胸肉。"
+    ],
+    "note": "默认2人份，盐可按口味减少，搭配米饭食用。",
+    "brothy": false
+  },
+  {
+    "id": "pumpkin_chicken_pot",
+    "name": "南瓜鸡肉煲",
+    "category": "chicken",
+    "category_label": "鸡肉类",
+    "role": "main",
+    "roles": [
+      "main"
+    ],
+    "servings": 2,
+    "time": 40,
+    "difficulty": "简单",
+    "light": false,
+    "oily": false,
+    "starchy": true,
+    "ingredients": [
+      "鸡腿肉300g",
+      "南瓜250g",
+      "洋葱80g",
+      "姜10g"
+    ],
+    "seasonings": [
+      "油2茶匙",
+      "生抽2茶匙",
+      "盐1g"
+    ],
+    "steps": [
+      "鸡腿肉切块，南瓜去籽切块，洋葱切片",
+      "热油炒姜葱及鸡块至表面变色",
+      "加生抽和热水350ml，盖盖炖15分钟",
+      "加入南瓜再炖12—15分钟至南瓜软熟、鸡肉熟透，加盐"
+    ],
+    "tags": [
+      "鸡肉",
+      "南瓜",
+      "砂锅",
+      "一锅菜"
+    ],
+    "avoid_pair_tags": [],
+    "substitutions": [
+      "南瓜可换土豆，炖至软熟。"
+    ],
+    "note": "保留少量汤汁，汤可选，米饭正常搭配。",
+    "brothy": true
+  },
+  {
+    "id": "sesame_chicken_salad",
+    "name": "芝麻黄瓜鸡丝",
+    "category": "chicken",
+    "category_label": "鸡肉类",
+    "role": "main",
+    "roles": [
+      "main"
+    ],
+    "servings": 2,
+    "time": 30,
+    "difficulty": "简单",
+    "light": true,
+    "oily": false,
+    "starchy": false,
+    "ingredients": [
+      "鸡胸肉280g",
+      "黄瓜200g",
+      "姜10g",
+      "葱1根"
+    ],
+    "seasonings": [
+      "芝麻酱2茶匙",
+      "生抽2茶匙",
+      "米醋2茶匙",
+      "熟芝麻1茶匙"
+    ],
+    "steps": [
+      "鸡胸肉与姜葱入锅，加水没过，煮开后小火煮15—18分钟至中心熟透",
+      "鸡肉取出稍凉，用干净工具撕丝",
+      "黄瓜用可饮用水洗净切丝，芝麻酱加生抽米醋及温水2汤匙调匀",
+      "鸡丝黄瓜拌入酱汁，撒熟芝麻，当餐食用"
+    ],
+    "tags": [
+      "鸡肉",
+      "凉拌",
+      "黄瓜",
+      "快手"
+    ],
+    "avoid_pair_tags": [],
+    "substitutions": [
+      "黄瓜可换焯熟晾凉的莴笋丝。"
+    ],
+    "note": "默认2人份，盐可按口味减少，搭配米饭食用。",
+    "brothy": false
+  },
+  {
+    "id": "three_cup_chicken",
+    "name": "三杯鸡减油版",
+    "category": "chicken",
+    "category_label": "鸡肉类",
+    "role": "main",
+    "roles": [
+      "main"
+    ],
+    "servings": 2,
+    "time": 35,
+    "difficulty": "简单",
+    "light": false,
+    "oily": false,
+    "starchy": false,
+    "ingredients": [
+      "鸡腿肉350g",
+      "姜15g",
+      "蒜20g",
+      "九层塔10g"
+    ],
+    "seasonings": [
+      "油2茶匙",
+      "生抽2茶匙",
+      "米酒2汤匙",
+      "糖半茶匙"
+    ],
+    "steps": [
+      "鸡腿肉切块，姜切片，九层塔洗净",
+      "热油炒姜蒜，下鸡肉煎至表面变色",
+      "加生抽米酒糖及水120ml，盖盖小火焖15分钟",
+      "确认鸡肉中心熟透，开盖收汁，放九层塔翻匀"
+    ],
+    "tags": [
+      "鸡肉",
+      "台式",
+      "焖",
+      "重口"
+    ],
+    "avoid_pair_tags": [],
+    "substitutions": [
+      "九层塔可换罗勒叶，没有可省略。"
+    ],
+    "note": "默认2人份，盐可按口味减少，搭配米饭食用。",
+    "brothy": false
+  },
+  {
+    "id": "steamed_mushroom_pork",
+    "name": "香菇蒸肉饼",
+    "category": "pork",
+    "category_label": "猪肉类",
+    "role": "main",
+    "roles": [
+      "main"
+    ],
+    "servings": 2,
+    "time": 30,
+    "difficulty": "简单",
+    "light": true,
+    "oily": false,
+    "starchy": false,
+    "ingredients": [
+      "瘦肉末250g",
+      "鲜香菇100g",
+      "姜5g",
+      "葱1根"
+    ],
+    "seasonings": [
+      "生抽2茶匙",
+      "淀粉1茶匙",
+      "油1茶匙"
+    ],
+    "steps": [
+      "香菇姜剁碎，和肉末、生抽、淀粉、油及水50ml拌匀",
+      "把肉馅铺在浅盘中，厚度不超过2cm",
+      "水开后蒸18—20分钟，至肉饼中心完全熟透，较厚时延长",
+      "撒葱花，连盘汁一起食用"
+    ],
+    "tags": [
+      "猪肉",
+      "菌菇",
+      "蒸",
+      "快手"
+    ],
+    "avoid_pair_tags": [],
+    "substitutions": [
+      "鲜香菇可换马蹄碎。"
+    ],
+    "note": "默认2人份，盐可按口味减少，搭配米饭食用。",
+    "brothy": false
+  },
+  {
+    "id": "mapo_tofu_mild",
+    "name": "麻婆豆腐少辣版",
+    "category": "tofu",
+    "category_label": "豆腐类",
+    "role": "main",
+    "roles": [
+      "main"
+    ],
+    "servings": 2,
+    "time": 25,
+    "difficulty": "简单",
+    "light": false,
+    "oily": false,
+    "starchy": false,
+    "ingredients": [
+      "北豆腐350g",
+      "瘦牛肉末100g",
+      "蒜10g",
+      "葱1根"
+    ],
+    "seasonings": [
+      "油2茶匙",
+      "豆瓣酱1茶匙",
+      "生抽1茶匙",
+      "淀粉1茶匙",
+      "花椒粉少许"
+    ],
+    "steps": [
+      "豆腐切块，热水中煮2分钟捞出",
+      "热油炒蒜和牛肉末至熟透，下豆瓣酱小火炒香",
+      "加入水200ml、生抽及豆腐，小火煮8分钟",
+      "淀粉加水调开倒入，煮稠后撒葱花和花椒粉"
+    ],
+    "tags": [
+      "豆腐",
+      "牛肉",
+      "川味",
+      "重口",
+      "快手"
+    ],
+    "avoid_pair_tags": [],
+    "substitutions": [
+      "牛肉末可换猪肉末，花椒粉可省略。"
+    ],
+    "note": "默认2人份，盐可按口味减少，搭配米饭食用。",
+    "brothy": false
+  },
+  {
+    "id": "shrimp_steamed_egg",
+    "name": "虾仁蒸蛋",
+    "category": "egg",
+    "category_label": "鸡蛋类",
+    "role": "main",
+    "roles": [
+      "main"
+    ],
+    "servings": 2,
+    "time": 25,
+    "difficulty": "简单",
+    "light": true,
+    "oily": false,
+    "starchy": false,
+    "ingredients": [
+      "鸡蛋3个",
+      "虾仁150g",
+      "葱1根"
+    ],
+    "seasonings": [
+      "盐1g",
+      "生抽1茶匙",
+      "香油半茶匙"
+    ],
+    "steps": [
+      "鸡蛋打散，加蛋液体积1.5倍温水和盐，过滤入浅碗",
+      "盖耐热盘防滴水，水开后小火蒸8分钟",
+      "放入去虾线的虾仁，再蒸6—8分钟至蛋液凝固、虾仁完全熟透",
+      "淋生抽香油，撒葱花"
+    ],
+    "tags": [
+      "鸡蛋",
+      "虾",
+      "蒸",
+      "快手"
+    ],
+    "avoid_pair_tags": [],
+    "substitutions": [
+      "虾仁可换焯熟的香菇丁。"
+    ],
+    "note": "默认2人份，盐可按口味减少，搭配米饭食用。",
+    "brothy": false
+  },
+  {
+    "id": "curry_tofu",
+    "name": "咖喱豆腐",
+    "category": "tofu",
+    "category_label": "豆腐类",
+    "role": "main",
+    "roles": [
+      "main"
+    ],
+    "servings": 2,
+    "time": 25,
+    "difficulty": "简单",
+    "light": false,
+    "oily": false,
+    "starchy": false,
+    "ingredients": [
+      "北豆腐350g",
+      "洋葱100g",
+      "胡萝卜100g",
+      "豌豆80g"
+    ],
+    "seasonings": [
+      "咖喱块25g",
+      "油2茶匙"
+    ],
+    "steps": [
+      "豆腐切块，洋葱切片，胡萝卜切薄片",
+      "热油炒软洋葱，放胡萝卜、豌豆和水350ml，煮8分钟",
+      "加入豆腐小火煮5分钟",
+      "加入咖喱块搅化，再煮3分钟至蔬菜熟透"
+    ],
+    "tags": [
+      "豆腐",
+      "咖喱",
+      "快手"
+    ],
+    "avoid_pair_tags": [],
+    "substitutions": [
+      "豌豆可换彩椒丁，最后加入。"
+    ],
+    "note": "配米饭和清爽蔬菜，汤可选。",
+    "brothy": false
+  },
+  {
+    "id": "curry_potato_ribs",
+    "name": "咖喱土豆排骨",
+    "category": "pork",
+    "category_label": "猪肉类",
+    "role": "main",
+    "roles": [
+      "main"
+    ],
+    "servings": 2,
+    "time": 75,
+    "difficulty": "简单",
+    "light": false,
+    "oily": false,
+    "starchy": true,
+    "ingredients": [
+      "排骨400g",
+      "土豆200g",
+      "洋葱100g",
+      "姜10g"
+    ],
+    "seasonings": [
+      "咖喱块30g",
+      "油2茶匙"
+    ],
+    "steps": [
+      "排骨冷水焯净浮沫，土豆洋葱切块",
+      "热油炒姜洋葱及排骨，加热水700ml",
+      "盖盖炖40分钟，再下土豆炖15分钟至排骨和土豆软熟",
+      "加咖喱块搅化，小火再煮3分钟"
+    ],
+    "tags": [
+      "猪肉",
+      "排骨",
+      "咖喱",
+      "炖菜"
+    ],
+    "avoid_pair_tags": [],
+    "substitutions": [
+      "土豆可换南瓜，最后12分钟放。"
+    ],
+    "note": "默认配米饭和清爽配菜，汤可选。",
+    "brothy": false
+  },
+  {
+    "id": "cabbage_beef_pot",
+    "name": "娃娃菜肥牛锅",
+    "category": "beef",
+    "category_label": "牛肉类",
+    "role": "main",
+    "roles": [
+      "main"
+    ],
+    "servings": 2,
+    "time": 25,
+    "difficulty": "简单",
+    "light": false,
+    "oily": false,
+    "starchy": false,
+    "ingredients": [
+      "肥牛片250g",
+      "娃娃菜300g",
+      "北豆腐200g",
+      "鲜香菇100g",
+      "姜5g"
+    ],
+    "seasonings": [
+      "生抽2茶匙",
+      "盐1g",
+      "白胡椒粉少许"
+    ],
+    "steps": [
+      "娃娃菜切段，豆腐切块，香菇切片",
+      "锅中放姜、蔬菜和豆腐，加水600ml煮10分钟",
+      "铺入肥牛片，划散煮至完全熟透并撇去浮沫",
+      "加生抽盐和胡椒，再煮2分钟"
+    ],
+    "tags": [
+      "牛肉",
+      "火锅",
+      "白菜",
+      "豆腐",
+      "快手"
+    ],
+    "avoid_pair_tags": [],
+    "substitutions": [
+      "肥牛可换瘦牛肉薄片。"
+    ],
+    "note": "本锅带汤，另配汤可选。",
+    "brothy": true
+  },
+  {
+    "id": "green_beans_dry_fry",
+    "name": "干煸四季豆减油版",
+    "category": "vegetable",
+    "category_label": "蔬菜类",
+    "role": "side",
+    "roles": [
+      "side"
+    ],
+    "servings": 2,
+    "time": 25,
+    "difficulty": "简单",
+    "light": false,
+    "oily": false,
+    "starchy": false,
+    "ingredients": [
+      "四季豆300g",
+      "蒜15g",
+      "干辣椒2个"
+    ],
+    "seasonings": [
+      "油2茶匙",
+      "生抽1茶匙",
+      "盐1g"
+    ],
+    "steps": [
+      "四季豆去两头与筋切段，沸水煮10分钟后沥干",
+      "不粘锅加油，下四季豆中小火煎炒5分钟至表皮微皱",
+      "加入蒜和干辣椒炒香，加水30ml盖盖焖3分钟",
+      "确认豆段内外软熟，加生抽盐炒干水分",
+      "彻底加热熟透，不可夹生；检查豆段内外软熟，未熟时继续加水焖煮。"
+    ],
+    "tags": [
+      "四季豆",
+      "川味",
+      "快手"
+    ],
+    "avoid_pair_tags": [],
+    "substitutions": [
+      "干辣椒可省略，四季豆可换长豆角并充分煮熟。"
+    ],
+    "note": "默认2人份，盐可按口味减少，搭配米饭食用。 四季豆、豆角必须彻底加热熟透，不可夹生。",
+    "brothy": false
+  },
+  {
+    "id": "garlic_green_beans",
+    "name": "蒜蓉四季豆",
+    "category": "vegetable",
+    "category_label": "蔬菜类",
+    "role": "side",
+    "roles": [
+      "side"
+    ],
+    "servings": 2,
+    "time": 25,
+    "difficulty": "简单",
+    "light": true,
+    "oily": false,
+    "starchy": false,
+    "ingredients": [
+      "四季豆300g",
+      "蒜15g"
+    ],
+    "seasonings": [
+      "油2茶匙",
+      "盐2g"
+    ],
+    "steps": [
+      "四季豆去两头和筋切段，蒜切末",
+      "四季豆沸水煮10分钟至接近软熟",
+      "热油炒香蒜，下四季豆和水50ml，盖盖焖5分钟",
+      "确认豆段内外软熟后加盐翻匀",
+      "彻底加热熟透，不可夹生；检查豆段内外软熟，未熟时继续加水焖煮。"
+    ],
+    "tags": [
+      "四季豆",
+      "蒜蓉",
+      "清淡",
+      "快手"
+    ],
+    "avoid_pair_tags": [],
+    "substitutions": [
+      "蒜末可换姜末。"
+    ],
+    "note": "默认2人份，盐可按口味减少，搭配米饭食用。 四季豆、豆角必须彻底加热熟透，不可夹生。",
+    "brothy": false
+  },
+  {
+    "id": "long_beans_sesame",
+    "name": "芝麻拌熟豆角",
+    "category": "vegetable",
+    "category_label": "蔬菜类",
+    "role": "side",
+    "roles": [
+      "side"
+    ],
+    "servings": 2,
+    "time": 25,
+    "difficulty": "简单",
+    "light": true,
+    "oily": false,
+    "starchy": false,
+    "ingredients": [
+      "长豆角300g",
+      "蒜5g"
+    ],
+    "seasonings": [
+      "芝麻酱2茶匙",
+      "米醋2茶匙",
+      "生抽1茶匙",
+      "盐1g"
+    ],
+    "steps": [
+      "豆角去两端切段，沸水煮12—15分钟至内外软熟",
+      "捞出沥干，摊在干净盘中自然降温",
+      "芝麻酱加温水2汤匙、米醋生抽盐和蒜末调匀",
+      "将酱汁拌入熟豆角，当餐吃完",
+      "彻底加热熟透，不可夹生；检查豆段内外软熟，未熟时继续加水焖煮。"
+    ],
+    "tags": [
+      "豆角",
+      "凉拌",
+      "芝麻",
+      "快手"
+    ],
+    "avoid_pair_tags": [],
+    "substitutions": [
+      "芝麻酱可换少量香油。"
+    ],
+    "note": "默认2人份，盐可按口味减少，搭配米饭食用。 四季豆、豆角必须彻底加热熟透，不可夹生。",
+    "brothy": false
+  },
+  {
+    "id": "long_beans_potato",
+    "name": "豆角炖土豆",
+    "category": "vegetable",
+    "category_label": "蔬菜类",
+    "role": "side",
+    "roles": [
+      "side"
+    ],
+    "servings": 2,
+    "time": 35,
+    "difficulty": "简单",
+    "light": false,
+    "oily": false,
+    "starchy": true,
+    "ingredients": [
+      "长豆角250g",
+      "土豆200g",
+      "蒜10g"
+    ],
+    "seasonings": [
+      "油2茶匙",
+      "生抽2茶匙",
+      "盐1g"
+    ],
+    "steps": [
+      "豆角去两端切段，土豆切小块",
+      "热油炒蒜，放豆角土豆翻炒2分钟",
+      "加水300ml和生抽，盖盖小火炖20分钟",
+      "检查豆角内外软熟、土豆软烂，未熟继续煮，加盐略收汁",
+      "彻底加热熟透，不可夹生；检查豆段内外软熟，未熟时继续加水焖煮。"
+    ],
+    "tags": [
+      "豆角",
+      "土豆",
+      "炖菜"
+    ],
+    "avoid_pair_tags": [],
+    "substitutions": [
+      "土豆可换南瓜，最后12分钟再下锅。"
+    ],
+    "note": "默认2人份，盐可按口味减少，搭配米饭食用。 四季豆、豆角必须彻底加热熟透，不可夹生。",
+    "brothy": false
+  },
+  {
+    "id": "long_beans_egg",
+    "name": "豆角炒鸡蛋",
+    "category": "vegetable",
+    "category_label": "蔬菜类",
+    "role": "side",
+    "roles": [
+      "side"
+    ],
+    "servings": 2,
+    "time": 25,
+    "difficulty": "简单",
+    "light": false,
+    "oily": false,
+    "starchy": false,
+    "ingredients": [
+      "长豆角250g",
+      "鸡蛋2个",
+      "葱1根"
+    ],
+    "seasonings": [
+      "油2茶匙",
+      "盐2g"
+    ],
+    "steps": [
+      "豆角去两端切小粒，鸡蛋加1g盐打散",
+      "豆粒沸水煮10分钟至软熟，捞出沥干",
+      "锅加一半油，将鸡蛋炒至凝固全熟后盛出",
+      "余油炒豆粒，加水40ml盖盖焖3分钟，确认熟透，放鸡蛋和余盐炒匀",
+      "彻底加热熟透，不可夹生；检查豆段内外软熟，未熟时继续加水焖煮。"
+    ],
+    "tags": [
+      "豆角",
+      "鸡蛋",
+      "快手"
+    ],
+    "avoid_pair_tags": [],
+    "substitutions": [
+      "鸡蛋可换香干丁。"
+    ],
+    "note": "默认2人份，盐可按口味减少，搭配米饭食用。 四季豆、豆角必须彻底加热熟透，不可夹生。",
+    "brothy": false
+  },
+  {
+    "id": "steamed_pumpkin",
+    "name": "清蒸南瓜",
+    "category": "vegetable",
+    "category_label": "蔬菜类",
+    "role": "side",
+    "roles": [
+      "side"
+    ],
+    "servings": 2,
+    "time": 25,
+    "difficulty": "简单",
+    "light": true,
+    "oily": false,
+    "starchy": true,
+    "ingredients": [
+      "南瓜350g"
+    ],
+    "seasonings": [
+      "盐少许（可不放）"
+    ],
+    "steps": [
+      "南瓜去籽，洗净并按品种决定是否去硬皮",
+      "切成厚度约1.5cm的块，平铺耐热盘",
+      "蒸锅水开后放入，大火蒸15—20分钟",
+      "用筷子能轻松穿透即熟，可撒少许盐"
+    ],
+    "tags": [
+      "南瓜",
+      "蒸",
+      "清淡",
+      "快手"
+    ],
+    "avoid_pair_tags": [],
+    "substitutions": [
+      "南瓜可换贝贝南瓜，切块蒸熟。"
+    ],
+    "note": "默认2人份，盐可按口味减少，搭配米饭食用。",
+    "brothy": false
+  },
+  {
+    "id": "garlic_pumpkin",
+    "name": "蒜香焖南瓜",
+    "category": "vegetable",
+    "category_label": "蔬菜类",
+    "role": "side",
+    "roles": [
+      "side"
+    ],
+    "servings": 2,
+    "time": 25,
+    "difficulty": "简单",
+    "light": true,
+    "oily": false,
+    "starchy": true,
+    "ingredients": [
+      "南瓜300g",
+      "蒜15g"
+    ],
+    "seasonings": [
+      "油2茶匙",
+      "盐1g"
+    ],
+    "steps": [
+      "南瓜去籽去硬皮切小块，蒜切片",
+      "热油炒香蒜片，下南瓜翻炒2分钟",
+      "加水100ml盖盖焖12—15分钟至软熟",
+      "加盐，开盖稍收汁，轻翻避免碎烂"
+    ],
+    "tags": [
+      "南瓜",
+      "蒜香",
+      "快手"
+    ],
+    "avoid_pair_tags": [],
+    "substitutions": [
+      "南瓜可换胡萝卜，适当延长焖煮。"
+    ],
+    "note": "默认2人份，盐可按口味减少，搭配米饭食用。",
+    "brothy": false
+  },
+  {
+    "id": "corn_colorful",
+    "name": "缤纷玉米粒",
+    "category": "vegetable",
+    "category_label": "蔬菜类",
+    "role": "side",
+    "roles": [
+      "side"
+    ],
+    "servings": 2,
+    "time": 20,
+    "difficulty": "简单",
+    "light": true,
+    "oily": false,
+    "starchy": true,
+    "ingredients": [
+      "玉米粒200g",
+      "豌豆100g",
+      "胡萝卜80g"
+    ],
+    "seasonings": [
+      "油2茶匙",
+      "盐2g"
+    ],
+    "steps": [
+      "胡萝卜去皮切小丁",
+      "玉米、豌豆和胡萝卜入沸水煮5—7分钟至熟，沥干",
+      "热锅下油，倒入所有蔬菜翻炒2分钟",
+      "加盐及水20ml，继续炒1分钟"
+    ],
+    "tags": [
+      "玉米",
+      "豌豆",
+      "快手"
+    ],
+    "avoid_pair_tags": [],
+    "substitutions": [
+      "豌豆可换黄瓜丁，最后加入炒熟。"
+    ],
+    "note": "默认2人份，盐可按口味减少，搭配米饭食用。",
+    "brothy": false
+  },
+  {
+    "id": "salt_pepper_corn",
+    "name": "椒盐玉米少油版",
+    "category": "vegetable",
+    "category_label": "蔬菜类",
+    "role": "side",
+    "roles": [
+      "side"
+    ],
+    "servings": 2,
+    "time": 20,
+    "difficulty": "简单",
+    "light": false,
+    "oily": false,
+    "starchy": true,
+    "ingredients": [
+      "熟玉米粒250g",
+      "青椒50g",
+      "葱1根"
+    ],
+    "seasonings": [
+      "油2茶匙",
+      "淀粉1茶匙",
+      "椒盐半茶匙"
+    ],
+    "steps": [
+      "熟玉米粒充分沥干，拌入薄薄淀粉",
+      "青椒去籽切丁，葱切末",
+      "不粘锅热油，将玉米粒摊开煎炒5分钟",
+      "加入青椒炒3分钟，撒椒盐葱花拌匀"
+    ],
+    "tags": [
+      "玉米",
+      "椒盐",
+      "快手"
+    ],
+    "avoid_pair_tags": [],
+    "substitutions": [
+      "青椒可换彩椒。"
+    ],
+    "note": "默认2人份，盐可按口味减少，搭配米饭食用。",
+    "brothy": false
+  },
+  {
+    "id": "broccoli_carrot",
+    "name": "西兰花炒胡萝卜",
+    "category": "vegetable",
+    "category_label": "蔬菜类",
+    "role": "side",
+    "roles": [
+      "side"
+    ],
+    "servings": 2,
+    "time": 15,
+    "difficulty": "简单",
+    "light": true,
+    "oily": false,
+    "starchy": false,
+    "ingredients": [
+      "西兰花250g",
+      "胡萝卜100g",
+      "蒜10g"
+    ],
+    "seasonings": [
+      "油2茶匙",
+      "盐2g"
+    ],
+    "steps": [
+      "西兰花切小朵洗净，胡萝卜切薄片",
+      "沸水先煮胡萝卜2分钟，再下西兰花煮2分钟",
+      "热油炒蒜，倒入蔬菜及水30ml",
+      "翻炒2分钟至熟，加盐"
+    ],
+    "tags": [
+      "西兰花",
+      "胡萝卜",
+      "快手"
+    ],
+    "avoid_pair_tags": [],
+    "substitutions": [
+      "胡萝卜可换彩椒。"
+    ],
+    "note": "默认2人份，盐可按口味减少，搭配米饭食用。",
+    "brothy": false
+  },
+  {
+    "id": "broccoli_mushroom",
+    "name": "西兰花炒口蘑",
+    "category": "vegetable",
+    "category_label": "蔬菜类",
+    "role": "side",
+    "roles": [
+      "side"
+    ],
+    "servings": 2,
+    "time": 20,
+    "difficulty": "简单",
+    "light": true,
+    "oily": false,
+    "starchy": false,
+    "ingredients": [
+      "西兰花250g",
+      "口蘑150g",
+      "蒜10g"
+    ],
+    "seasonings": [
+      "油2茶匙",
+      "盐2g"
+    ],
+    "steps": [
+      "西兰花切朵洗净，口蘑切片",
+      "西兰花沸水焯3分钟后捞出",
+      "热油炒蒜和口蘑至出水，再煮炒3分钟",
+      "下西兰花和盐炒2分钟至全熟"
+    ],
+    "tags": [
+      "西兰花",
+      "菌菇",
+      "快手"
+    ],
+    "avoid_pair_tags": [],
+    "substitutions": [
+      "口蘑可换鲜香菇片。"
+    ],
+    "note": "默认2人份，盐可按口味减少，搭配米饭食用。",
+    "brothy": false
+  },
+  {
+    "id": "vinegar_lotus",
+    "name": "酸甜藕片",
+    "category": "vegetable",
+    "category_label": "蔬菜类",
+    "role": "side",
+    "roles": [
+      "side"
+    ],
+    "servings": 2,
+    "time": 20,
+    "difficulty": "简单",
+    "light": true,
+    "oily": false,
+    "starchy": true,
+    "ingredients": [
+      "莲藕300g",
+      "小葱1根"
+    ],
+    "seasonings": [
+      "米醋2茶匙",
+      "糖半茶匙",
+      "盐1g",
+      "香油半茶匙"
+    ],
+    "steps": [
+      "莲藕去皮切薄片，清水冲去表面淀粉",
+      "沸水煮5—6分钟至熟，捞出沥干自然降温",
+      "米醋糖盐和香油调匀",
+      "藕片拌汁撒葱花，当餐吃完"
+    ],
+    "tags": [
+      "莲藕",
+      "凉拌",
+      "快手"
+    ],
+    "avoid_pair_tags": [],
+    "substitutions": [
+      "米醋可换柠檬汁，按酸度少量添加。"
+    ],
+    "note": "默认2人份，盐可按口味减少，搭配米饭食用。",
+    "brothy": false
+  },
+  {
+    "id": "lotus_wood_ear",
+    "name": "藕片炒木耳",
+    "category": "vegetable",
+    "category_label": "蔬菜类",
+    "role": "side",
+    "roles": [
+      "side"
+    ],
+    "servings": 2,
+    "time": 20,
+    "difficulty": "简单",
+    "light": true,
+    "oily": false,
+    "starchy": true,
+    "ingredients": [
+      "莲藕200g",
+      "泡发木耳100g",
+      "胡萝卜60g",
+      "蒜10g"
+    ],
+    "seasonings": [
+      "油2茶匙",
+      "盐2g"
+    ],
+    "steps": [
+      "莲藕与胡萝卜切薄片，木耳撕小朵",
+      "藕片和胡萝卜沸水煮3分钟，木耳另煮3分钟",
+      "热油炒蒜，倒入三种食材，加水40ml",
+      "翻炒3分钟至全熟，加盐"
+    ],
+    "tags": [
+      "莲藕",
+      "木耳",
+      "快手"
+    ],
+    "avoid_pair_tags": [],
+    "substitutions": [
+      "木耳可换鲜香菇；泡发木耳冷藏并及时使用。"
+    ],
+    "note": "默认2人份，盐可按口味减少，搭配米饭食用。",
+    "brothy": false
+  },
+  {
+    "id": "green_pepper_potato",
+    "name": "青椒土豆丝",
+    "category": "vegetable",
+    "category_label": "蔬菜类",
+    "role": "side",
+    "roles": [
+      "side"
+    ],
+    "servings": 2,
+    "time": 20,
+    "difficulty": "简单",
+    "light": true,
+    "oily": false,
+    "starchy": true,
+    "ingredients": [
+      "土豆250g",
+      "青椒100g",
+      "蒜10g"
+    ],
+    "seasonings": [
+      "油2茶匙",
+      "盐2g"
+    ],
+    "steps": [
+      "土豆去皮切细丝，冲去表面淀粉，青椒切丝",
+      "热锅下油炒香蒜片",
+      "放土豆丝翻炒3分钟，加水50ml盖盖焖3分钟",
+      "加青椒和盐，再炒2—3分钟至土豆丝熟透"
+    ],
+    "tags": [
+      "土豆",
+      "青椒",
+      "快手"
+    ],
+    "avoid_pair_tags": [],
+    "substitutions": [
+      "青椒可换彩椒。"
+    ],
+    "note": "默认2人份，盐可按口味减少，搭配米饭食用。",
+    "brothy": false
+  },
+  {
+    "id": "cumin_potato",
+    "name": "孜然土豆块",
+    "category": "vegetable",
+    "category_label": "蔬菜类",
+    "role": "side",
+    "roles": [
+      "side"
+    ],
+    "servings": 2,
+    "time": 30,
+    "difficulty": "简单",
+    "light": false,
+    "oily": false,
+    "starchy": true,
+    "ingredients": [
+      "土豆350g",
+      "葱1根"
+    ],
+    "seasonings": [
+      "油2茶匙",
+      "孜然粉1茶匙",
+      "盐2g",
+      "辣椒粉少许（可不放）"
+    ],
+    "steps": [
+      "土豆去皮切2cm小块",
+      "沸水煮10—12分钟至熟，捞出沥干",
+      "不粘锅热油，中小火煎炒土豆至表面微黄",
+      "撒盐孜然和辣椒粉翻匀，出锅撒葱花"
+    ],
+    "tags": [
+      "土豆",
+      "孜然",
+      "快手"
+    ],
+    "avoid_pair_tags": [],
+    "substitutions": [
+      "大土豆可换小土豆切半。"
+    ],
+    "note": "默认2人份，盐可按口味减少，搭配米饭食用。",
+    "brothy": false
+  },
+  {
+    "id": "spinach_sesame",
+    "name": "芝麻菠菜",
+    "category": "vegetable",
+    "category_label": "蔬菜类",
+    "role": "side",
+    "roles": [
+      "side"
+    ],
+    "servings": 2,
+    "time": 15,
+    "difficulty": "简单",
+    "light": true,
+    "oily": false,
+    "starchy": false,
+    "ingredients": [
+      "菠菜300g"
+    ],
+    "seasonings": [
+      "熟芝麻1茶匙",
+      "生抽1茶匙",
+      "米醋1茶匙",
+      "香油半茶匙"
+    ],
+    "steps": [
+      "菠菜去根洗净，切长段",
+      "沸水先放梗30秒，再下叶子煮1—2分钟至熟",
+      "捞出沥干，自然降温后轻挤水分",
+      "拌生抽米醋香油，撒熟芝麻，当餐食用"
+    ],
+    "tags": [
+      "菠菜",
+      "凉拌",
+      "快手"
+    ],
+    "avoid_pair_tags": [],
+    "substitutions": [
+      "菠菜可换油麦菜并焯熟。"
+    ],
+    "note": "默认2人份，盐可按口味减少，搭配米饭食用。",
+    "brothy": false
+  },
+  {
+    "id": "bok_choy_mushroom",
+    "name": "香菇炒小白菜",
+    "category": "vegetable",
+    "category_label": "蔬菜类",
+    "role": "side",
+    "roles": [
+      "side"
+    ],
+    "servings": 2,
+    "time": 15,
+    "difficulty": "简单",
+    "light": true,
+    "oily": false,
+    "starchy": false,
+    "ingredients": [
+      "小白菜300g",
+      "鲜香菇100g",
+      "蒜10g"
+    ],
+    "seasonings": [
+      "油2茶匙",
+      "盐2g"
+    ],
+    "steps": [
+      "小白菜梗叶分开，香菇切片",
+      "热油炒蒜和香菇，加水40ml煮3分钟",
+      "加入菜梗炒2分钟，再下菜叶",
+      "炒至叶软梗熟，加盐拌匀"
+    ],
+    "tags": [
+      "青菜",
+      "菌菇",
+      "快手"
+    ],
+    "avoid_pair_tags": [],
+    "substitutions": [
+      "小白菜可换上海青。"
+    ],
+    "note": "默认2人份，盐可按口味减少，搭配米饭食用。",
+    "brothy": false
+  },
+  {
+    "id": "lettuce_oyster_sauce",
+    "name": "蚝油生菜",
+    "category": "vegetable",
+    "category_label": "蔬菜类",
+    "role": "side",
+    "roles": [
+      "side"
+    ],
+    "servings": 2,
+    "time": 15,
+    "difficulty": "简单",
+    "light": true,
+    "oily": false,
+    "starchy": false,
+    "ingredients": [
+      "生菜300g",
+      "蒜10g"
+    ],
+    "seasonings": [
+      "油1茶匙",
+      "蚝油1茶匙",
+      "生抽1茶匙",
+      "淀粉半茶匙"
+    ],
+    "steps": [
+      "生菜掰开洗净，蒜切末",
+      "沸水下生菜烫至熟软，约1分钟，沥水装盘",
+      "小锅热油炒蒜，加蚝油、生抽及水60ml煮开",
+      "淀粉用少量水化开加入煮稠，淋在生菜上"
+    ],
+    "tags": [
+      "生菜",
+      "粤式",
+      "快手"
+    ],
+    "avoid_pair_tags": [],
+    "substitutions": [
+      "生菜可换油麦菜。"
+    ],
+    "note": "默认2人份，盐可按口味减少，搭配米饭食用。",
+    "brothy": false
+  },
+  {
+    "id": "cucumber_wood_ear",
+    "name": "黄瓜拌木耳",
+    "category": "vegetable",
+    "category_label": "蔬菜类",
+    "role": "side",
+    "roles": [
+      "side"
+    ],
+    "servings": 2,
+    "time": 20,
+    "difficulty": "简单",
+    "light": true,
+    "oily": false,
+    "starchy": false,
+    "ingredients": [
+      "黄瓜200g",
+      "泡发木耳120g",
+      "蒜10g"
+    ],
+    "seasonings": [
+      "生抽1茶匙",
+      "米醋2茶匙",
+      "香油半茶匙",
+      "盐1g"
+    ],
+    "steps": [
+      "木耳用冷藏短时泡发，去根洗净",
+      "沸水煮5分钟至熟，沥水自然降温",
+      "黄瓜用可饮用水洗净拍块，蒜切末",
+      "所有食材拌调料，当餐吃完"
+    ],
+    "tags": [
+      "黄瓜",
+      "木耳",
+      "凉拌",
+      "快手"
+    ],
+    "avoid_pair_tags": [],
+    "substitutions": [
+      "黄瓜可换焯熟的莴笋片。"
+    ],
+    "note": "默认2人份，盐可按口味减少，搭配米饭食用。",
+    "brothy": false
+  },
+  {
+    "id": "cabbage_glass_noodle",
+    "name": "包菜炒粉丝",
+    "category": "vegetable",
+    "category_label": "蔬菜类",
+    "role": "side",
+    "roles": [
+      "side"
+    ],
+    "servings": 2,
+    "time": 25,
+    "difficulty": "简单",
+    "light": false,
+    "oily": false,
+    "starchy": true,
+    "ingredients": [
+      "包菜250g",
+      "干粉丝50g",
+      "胡萝卜80g",
+      "蒜10g"
+    ],
+    "seasonings": [
+      "油2茶匙",
+      "生抽2茶匙",
+      "盐1g"
+    ],
+    "steps": [
+      "粉丝按包装泡软剪短，包菜胡萝卜切丝",
+      "热油炒香蒜，先炒胡萝卜2分钟",
+      "加入包菜炒软，下粉丝和水100ml盖盖焖3分钟",
+      "加生抽盐翻炒至粉丝熟透、汁收干"
+    ],
+    "tags": [
+      "包菜",
+      "粉丝",
+      "快手"
+    ],
+    "avoid_pair_tags": [],
+    "substitutions": [
+      "粉丝可换红薯粉，按包装煮熟再炒。"
+    ],
+    "note": "默认2人份，盐可按口味减少，搭配米饭食用。",
+    "brothy": false
+  },
+  {
+    "id": "celery_cashew",
+    "name": "芹菜炒腰果",
+    "category": "vegetable",
+    "category_label": "蔬菜类",
+    "role": "side",
+    "roles": [
+      "side"
+    ],
+    "servings": 2,
+    "time": 15,
+    "difficulty": "简单",
+    "light": true,
+    "oily": false,
+    "starchy": false,
+    "ingredients": [
+      "芹菜250g",
+      "熟无盐腰果30g",
+      "胡萝卜60g"
+    ],
+    "seasonings": [
+      "油1茶匙",
+      "盐2g"
+    ],
+    "steps": [
+      "芹菜去老筋切段，胡萝卜切片",
+      "沸水中焯芹菜和胡萝卜2分钟",
+      "锅热油，下蔬菜加盐炒2分钟",
+      "出锅前放熟腰果翻匀，保持口感"
+    ],
+    "tags": [
+      "芹菜",
+      "腰果",
+      "快手"
+    ],
+    "avoid_pair_tags": [],
+    "substitutions": [
+      "熟腰果可换熟花生，按个人过敏情况选择。"
+    ],
+    "note": "默认2人份，盐可按口味减少，搭配米饭食用。",
+    "brothy": false
+  },
+  {
+    "id": "garlic_snow_peas",
+    "name": "蒜蓉荷兰豆",
+    "category": "vegetable",
+    "category_label": "蔬菜类",
+    "role": "side",
+    "roles": [
+      "side"
+    ],
+    "servings": 2,
+    "time": 20,
+    "difficulty": "简单",
+    "light": true,
+    "oily": false,
+    "starchy": false,
+    "ingredients": [
+      "荷兰豆300g",
+      "蒜15g"
+    ],
+    "seasonings": [
+      "油2茶匙",
+      "盐2g"
+    ],
+    "steps": [
+      "荷兰豆去两端及筋，清洗干净",
+      "沸水煮3—4分钟后捞出",
+      "热油炒蒜，下荷兰豆及水50ml，盖盖焖3分钟",
+      "确认豆荚完全熟透后加盐拌匀"
+    ],
+    "tags": [
+      "荷兰豆",
+      "蒜蓉",
+      "快手"
+    ],
+    "avoid_pair_tags": [],
+    "substitutions": [
+      "荷兰豆可换西兰花小朵并充分煮熟。"
+    ],
+    "note": "默认2人份，盐可按口味减少，搭配米饭食用。",
+    "brothy": false
+  },
+  {
+    "id": "sauteed_king_oyster",
+    "name": "手撕杏鲍菇",
+    "category": "vegetable",
+    "category_label": "蔬菜类",
+    "role": "side",
+    "roles": [
+      "side"
+    ],
+    "servings": 2,
+    "time": 20,
+    "difficulty": "简单",
+    "light": false,
+    "oily": false,
+    "starchy": false,
+    "ingredients": [
+      "杏鲍菇300g",
+      "青椒80g",
+      "蒜10g"
+    ],
+    "seasonings": [
+      "油2茶匙",
+      "生抽2茶匙",
+      "盐1g"
+    ],
+    "steps": [
+      "杏鲍菇洗净撕细条，青椒切丝",
+      "热锅放油，下杏鲍菇中火煸炒至出水",
+      "继续炒5分钟至菇熟、水分基本收干，放蒜和青椒",
+      "加入生抽盐，再炒3分钟至熟"
+    ],
+    "tags": [
+      "菌菇",
+      "青椒",
+      "快手"
+    ],
+    "avoid_pair_tags": [],
+    "substitutions": [
+      "杏鲍菇可换平菇撕条。"
+    ],
+    "note": "默认2人份，盐可按口味减少，搭配米饭食用。",
+    "brothy": false
+  },
+  {
+    "id": "steamed_carrot_yam",
+    "name": "胡萝卜蒸山药",
+    "category": "vegetable",
+    "category_label": "蔬菜类",
+    "role": "side",
+    "roles": [
+      "side"
+    ],
+    "servings": 2,
+    "time": 30,
+    "difficulty": "简单",
+    "light": true,
+    "oily": false,
+    "starchy": true,
+    "ingredients": [
+      "山药200g",
+      "胡萝卜150g"
+    ],
+    "seasonings": [
+      "盐少许（可不放）"
+    ],
+    "steps": [
+      "戴手套给山药去皮，胡萝卜去皮",
+      "两者切成1cm厚片，平铺盘中",
+      "水开上锅蒸20分钟",
+      "筷子能轻松穿透即熟，可撒少许盐"
+    ],
+    "tags": [
+      "山药",
+      "胡萝卜",
+      "蒸",
+      "快手"
+    ],
+    "avoid_pair_tags": [],
+    "substitutions": [
+      "山药可换南瓜块。"
+    ],
+    "note": "默认2人份，盐可按口味减少，搭配米饭食用。",
+    "brothy": false
+  },
+  {
+    "id": "tomato_cauliflower",
+    "name": "番茄烧菜花",
+    "category": "vegetable",
+    "category_label": "蔬菜类",
+    "role": "side",
+    "roles": [
+      "side"
+    ],
+    "servings": 2,
+    "time": 25,
+    "difficulty": "简单",
+    "light": true,
+    "oily": false,
+    "starchy": false,
+    "ingredients": [
+      "菜花300g",
+      "番茄200g",
+      "蒜10g"
+    ],
+    "seasonings": [
+      "油2茶匙",
+      "盐2g"
+    ],
+    "steps": [
+      "菜花切小朵洗净，番茄切块",
+      "菜花沸水煮3分钟捞出",
+      "锅热油炒蒜和番茄至出汁，下菜花和水100ml",
+      "盖盖焖5—7分钟至菜花熟透，加盐"
+    ],
+    "tags": [
+      "菜花",
+      "番茄",
+      "快手"
+    ],
+    "avoid_pair_tags": [],
+    "substitutions": [
+      "菜花可换西兰花，缩短焖煮时间。"
+    ],
+    "note": "默认2人份，盐可按口味减少，搭配米饭食用。",
+    "brothy": false
+  },
+  {
+    "id": "greens_tofu_soup",
+    "name": "青菜豆腐汤",
+    "category": "soup",
+    "category_label": "家常汤",
+    "role": "soup",
+    "roles": [
+      "soup"
+    ],
+    "servings": 2,
+    "time": 15,
+    "difficulty": "简单",
+    "light": true,
+    "oily": false,
+    "starchy": false,
+    "ingredients": [
+      "小白菜200g",
+      "嫩豆腐200g",
+      "姜5g"
+    ],
+    "seasonings": [
+      "盐2g",
+      "香油半茶匙"
+    ],
+    "steps": [
+      "青菜洗净切段，豆腐切小块",
+      "锅中加水700ml与姜片煮开",
+      "下豆腐小火煮5分钟，再放青菜煮3分钟至熟",
+      "加盐香油，轻轻搅匀"
+    ],
+    "tags": [
+      "青菜",
+      "豆腐",
+      "清淡",
+      "快手"
+    ],
+    "avoid_pair_tags": [],
+    "substitutions": [
+      "小白菜可换上海青。"
+    ],
+    "note": "默认2人份，盐可按口味减少，搭配米饭食用。",
+    "brothy": false
+  },
+  {
+    "id": "pumpkin_corn_soup",
+    "name": "南瓜玉米汤",
+    "category": "soup",
+    "category_label": "家常汤",
+    "role": "soup",
+    "roles": [
+      "soup"
+    ],
+    "servings": 2,
+    "time": 30,
+    "difficulty": "简单",
+    "light": true,
+    "oily": false,
+    "starchy": true,
+    "ingredients": [
+      "南瓜250g",
+      "玉米1根约200g"
+    ],
+    "seasonings": [
+      "盐1g"
+    ],
+    "steps": [
+      "南瓜去籽去硬皮切块，玉米切段",
+      "玉米与水800ml煮开，小火煮12分钟",
+      "放南瓜再煮12分钟至软熟",
+      "加盐，保持自然清甜"
+    ],
+    "tags": [
+      "南瓜",
+      "玉米",
+      "快手"
+    ],
+    "avoid_pair_tags": [],
+    "substitutions": [
+      "玉米可换胡萝卜块。"
+    ],
+    "note": "默认2人份，盐可按口味减少，搭配米饭食用。",
+    "brothy": false
+  },
+  {
+    "id": "tomato_enoki_egg_soup",
+    "name": "番茄金针菇蛋汤",
+    "category": "soup",
+    "category_label": "家常汤",
+    "role": "soup",
+    "roles": [
+      "soup"
+    ],
+    "servings": 2,
+    "time": 15,
+    "difficulty": "简单",
+    "light": true,
+    "oily": false,
+    "starchy": false,
+    "ingredients": [
+      "番茄200g",
+      "金针菇100g",
+      "鸡蛋1个",
+      "葱1根"
+    ],
+    "seasonings": [
+      "油1茶匙",
+      "盐2g"
+    ],
+    "steps": [
+      "番茄切块，金针菇去根切两段，鸡蛋打散",
+      "热油炒番茄至软，加水700ml",
+      "下金针菇煮5分钟至熟，淋蛋液",
+      "蛋液凝固后轻推，加盐葱花再煮开"
+    ],
+    "tags": [
+      "番茄",
+      "鸡蛋",
+      "菌菇",
+      "快手"
+    ],
+    "avoid_pair_tags": [],
+    "substitutions": [
+      "金针菇可换口蘑片。"
+    ],
+    "note": "默认2人份，盐可按口味减少，搭配米饭食用。",
+    "brothy": false
+  },
+  {
+    "id": "spinach_egg_soup",
+    "name": "菠菜鸡蛋汤",
+    "category": "soup",
+    "category_label": "家常汤",
+    "role": "soup",
+    "roles": [
+      "soup"
+    ],
+    "servings": 2,
+    "time": 15,
+    "difficulty": "简单",
+    "light": true,
+    "oily": false,
+    "starchy": false,
+    "ingredients": [
+      "菠菜200g",
+      "鸡蛋2个",
+      "姜5g"
+    ],
+    "seasonings": [
+      "盐2g",
+      "香油半茶匙"
+    ],
+    "steps": [
+      "菠菜洗净切段，鸡蛋打散",
+      "菠菜沸水焯1分钟捞出",
+      "另锅水700ml加姜煮开，下菠菜再煮1分钟",
+      "淋蛋液煮至完全凝固，加盐香油"
+    ],
+    "tags": [
+      "菠菜",
+      "鸡蛋",
+      "快手"
+    ],
+    "avoid_pair_tags": [],
+    "substitutions": [
+      "菠菜可换小白菜。"
+    ],
+    "note": "默认2人份，盐可按口味减少，搭配米饭食用。",
+    "brothy": false
+  },
+  {
+    "id": "radish_shrimp_soup",
+    "name": "萝卜虾仁汤",
+    "category": "soup",
+    "category_label": "家常汤",
+    "role": "soup",
+    "roles": [
+      "soup"
+    ],
+    "servings": 2,
+    "time": 25,
+    "difficulty": "简单",
+    "light": true,
+    "oily": false,
+    "starchy": false,
+    "ingredients": [
+      "白萝卜250g",
+      "虾仁150g",
+      "姜10g",
+      "葱1根"
+    ],
+    "seasonings": [
+      "油1茶匙",
+      "盐2g",
+      "白胡椒粉少许"
+    ],
+    "steps": [
+      "萝卜去皮切细丝，虾仁去虾线",
+      "锅热油炒姜和萝卜2分钟",
+      "加水750ml，小火煮12分钟至萝卜软熟",
+      "加入虾仁煮4—5分钟至全熟，加盐胡椒及葱花"
+    ],
+    "tags": [
+      "萝卜",
+      "虾",
+      "快手"
+    ],
+    "avoid_pair_tags": [],
+    "substitutions": [
+      "虾仁可换鱼片，煮至熟透。"
+    ],
+    "note": "默认2人份，盐可按口味减少，搭配米饭食用。",
+    "brothy": false
+  },
+  {
+    "id": "mushroom_chicken_soup",
+    "name": "鲜菌鸡片汤",
+    "category": "soup",
+    "category_label": "家常汤",
+    "role": "soup",
+    "roles": [
+      "soup"
+    ],
+    "servings": 2,
+    "time": 25,
+    "difficulty": "简单",
+    "light": true,
+    "oily": false,
+    "starchy": false,
+    "ingredients": [
+      "鸡胸肉180g",
+      "口蘑100g",
+      "平菇100g",
+      "姜10g"
+    ],
+    "seasonings": [
+      "盐2g",
+      "淀粉1茶匙",
+      "香油半茶匙"
+    ],
+    "steps": [
+      "鸡胸肉切薄片拌淀粉和少量水",
+      "菌菇洗净切片，姜切丝",
+      "水800ml煮开，下姜和菌菇煮8分钟",
+      "下鸡片划散，煮5分钟至中心熟透，加盐香油"
+    ],
+    "tags": [
+      "鸡肉",
+      "菌菇",
+      "快手"
+    ],
+    "avoid_pair_tags": [],
+    "substitutions": [
+      "鸡胸肉可换鸡腿肉薄片。"
+    ],
+    "note": "默认2人份，盐可按口味减少，搭配米饭食用。",
+    "brothy": false
+  },
+  {
+    "id": "lotus_peanut_soup",
+    "name": "莲藕花生汤",
+    "category": "soup",
+    "category_label": "家常汤",
+    "role": "soup",
+    "roles": [
+      "soup"
+    ],
+    "servings": 2,
+    "time": 70,
+    "difficulty": "简单",
+    "light": true,
+    "oily": false,
+    "starchy": true,
+    "ingredients": [
+      "莲藕250g",
+      "花生米60g",
+      "胡萝卜100g"
+    ],
+    "seasonings": [
+      "盐2g"
+    ],
+    "steps": [
+      "花生米洗净，莲藕和胡萝卜去皮切小块",
+      "花生与清水1000ml煮开，小火煮25分钟",
+      "加入莲藕胡萝卜再煮35分钟，中途按需补热水",
+      "至花生和莲藕软熟后加盐"
+    ],
+    "tags": [
+      "莲藕",
+      "花生",
+      "炖汤"
+    ],
+    "avoid_pair_tags": [],
+    "substitutions": [
+      "花生可换玉米段，同时缩短煮制时间。"
+    ],
+    "note": "默认2人份，盐可按口味减少，搭配米饭食用。",
+    "brothy": false
+  },
+  {
+    "id": "chayote_pork_soup",
+    "name": "佛手瓜肉片汤",
+    "category": "soup",
+    "category_label": "家常汤",
+    "role": "soup",
+    "roles": [
+      "soup"
+    ],
+    "servings": 2,
+    "time": 25,
+    "difficulty": "简单",
+    "light": true,
+    "oily": false,
+    "starchy": false,
+    "ingredients": [
+      "佛手瓜250g",
+      "瘦猪肉150g",
+      "姜5g"
+    ],
+    "seasonings": [
+      "盐2g",
+      "淀粉1茶匙",
+      "生抽1茶匙"
+    ],
+    "steps": [
+      "佛手瓜去硬皮去籽切片，猪肉切薄片用生抽淀粉拌匀",
+      "水750ml加姜煮开",
+      "下佛手瓜煮10分钟至软熟",
+      "下肉片划散煮4—5分钟至熟透，加盐"
+    ],
+    "tags": [
+      "佛手瓜",
+      "猪肉",
+      "快手"
+    ],
+    "avoid_pair_tags": [],
+    "substitutions": [
+      "佛手瓜可换冬瓜片。"
+    ],
+    "note": "默认2人份，盐可按口味减少，搭配米饭食用。",
+    "brothy": false
+  },
+  {
+    "id": "tomato_potato_soup",
+    "name": "番茄土豆汤",
+    "category": "soup",
+    "category_label": "家常汤",
+    "role": "soup",
+    "roles": [
+      "soup"
+    ],
+    "servings": 2,
+    "time": 30,
+    "difficulty": "简单",
+    "light": true,
+    "oily": false,
+    "starchy": true,
+    "ingredients": [
+      "番茄250g",
+      "土豆200g",
+      "洋葱50g"
+    ],
+    "seasonings": [
+      "油1茶匙",
+      "盐2g"
+    ],
+    "steps": [
+      "番茄切块，土豆去皮切1cm小块，洋葱切碎",
+      "热油炒洋葱和番茄至出汁",
+      "加水800ml和土豆，小火煮18—20分钟",
+      "确认土豆软熟后加盐调味"
+    ],
+    "tags": [
+      "番茄",
+      "土豆",
+      "快手"
+    ],
+    "avoid_pair_tags": [],
+    "substitutions": [
+      "土豆可换南瓜，最后12分钟放入。"
+    ],
+    "note": "默认2人份，盐可按口味减少，搭配米饭食用。",
+    "brothy": false
+  },
+  {
+    "id": "cucumber_egg_soup",
+    "name": "黄瓜蛋花汤",
+    "category": "soup",
+    "category_label": "家常汤",
+    "role": "soup",
+    "roles": [
+      "soup"
+    ],
+    "servings": 2,
+    "time": 10,
+    "difficulty": "简单",
+    "light": true,
+    "oily": false,
+    "starchy": false,
+    "ingredients": [
+      "黄瓜200g",
+      "鸡蛋2个"
+    ],
+    "seasonings": [
+      "盐2g",
+      "香油半茶匙"
+    ],
+    "steps": [
+      "黄瓜洗净切薄片，鸡蛋打散",
+      "水700ml煮开，放黄瓜煮2分钟",
+      "缓慢淋蛋液，待凝固后轻推，再煮1分钟至全熟",
+      "加盐和香油即可"
+    ],
+    "tags": [
+      "黄瓜",
+      "鸡蛋",
+      "快手"
+    ],
+    "avoid_pair_tags": [],
+    "substitutions": [
+      "黄瓜可换丝瓜片，延长至软熟。"
+    ],
+    "note": "默认2人份，盐可按口味减少，搭配米饭食用。",
+    "brothy": false
+  },
+  {
+    "id": "pea_tofu_soup",
+    "name": "豌豆豆腐汤",
+    "category": "soup",
+    "category_label": "家常汤",
+    "role": "soup",
+    "roles": [
+      "soup"
+    ],
+    "servings": 2,
+    "time": 20,
+    "difficulty": "简单",
+    "light": true,
+    "oily": false,
+    "starchy": false,
+    "ingredients": [
+      "豌豆100g",
+      "嫩豆腐200g",
+      "胡萝卜80g"
+    ],
+    "seasonings": [
+      "盐2g",
+      "香油半茶匙"
+    ],
+    "steps": [
+      "胡萝卜切小丁，豆腐切小块",
+      "水750ml煮开，放豌豆胡萝卜煮8分钟至熟",
+      "加入豆腐小火煮5分钟",
+      "加盐香油，轻搅避免豆腐碎"
+    ],
+    "tags": [
+      "豌豆",
+      "豆腐",
+      "快手"
+    ],
+    "avoid_pair_tags": [],
+    "substitutions": [
+      "豌豆可换玉米粒。"
+    ],
+    "note": "默认2人份，盐可按口味减少，搭配米饭食用。",
+    "brothy": false
+  },
+  {
+    "id": "cabbage_vermicelli_soup",
+    "name": "白菜粉丝汤",
+    "category": "soup",
+    "category_label": "家常汤",
+    "role": "soup",
+    "roles": [
+      "soup"
+    ],
+    "servings": 2,
+    "time": 20,
+    "difficulty": "简单",
+    "light": true,
+    "oily": false,
+    "starchy": true,
+    "ingredients": [
+      "白菜250g",
+      "干粉丝40g",
+      "鲜香菇80g",
+      "姜5g"
+    ],
+    "seasonings": [
+      "油1茶匙",
+      "盐2g"
+    ],
+    "steps": [
+      "粉丝按包装泡软剪短，白菜切段，香菇切片",
+      "热油炒姜和白菜梗，加水800ml",
+      "下香菇及白菜叶煮7分钟",
+      "下粉丝再煮3—5分钟至熟，加盐"
+    ],
+    "tags": [
+      "白菜",
+      "粉丝",
+      "菌菇",
+      "快手"
+    ],
+    "avoid_pair_tags": [],
+    "substitutions": [
+      "粉丝可换嫩豆腐块。"
+    ],
+    "note": "默认2人份，盐可按口味减少，搭配米饭食用。",
+    "brothy": false
+  },
+  {
+    "id": "yam_chicken_soup",
+    "name": "山药鸡汤",
+    "category": "soup",
+    "category_label": "家常汤",
+    "role": "soup",
+    "roles": [
+      "soup"
+    ],
+    "servings": 2,
+    "time": 60,
+    "difficulty": "简单",
+    "light": true,
+    "oily": false,
+    "starchy": true,
+    "ingredients": [
+      "鸡腿块300g",
+      "山药250g",
+      "姜10g"
+    ],
+    "seasonings": [
+      "盐2g"
+    ],
+    "steps": [
+      "鸡腿块冷水焯去浮沫，冲净",
+      "鸡块和姜加水900ml，煮开转小火炖30分钟",
+      "戴手套给山药去皮切块，下锅再炖20分钟",
+      "鸡肉和山药熟透后加盐"
+    ],
+    "tags": [
+      "鸡肉",
+      "山药",
+      "炖汤"
+    ],
+    "avoid_pair_tags": [],
+    "substitutions": [
+      "山药可换白萝卜。"
+    ],
+    "note": "默认2人份，盐可按口味减少，搭配米饭食用。",
+    "brothy": false
+  },
+  {
+    "id": "luffa_clam_soup",
+    "name": "丝瓜蛤蜊汤",
+    "category": "soup",
+    "category_label": "家常汤",
+    "role": "soup",
+    "roles": [
+      "soup"
+    ],
+    "servings": 2,
+    "time": 25,
+    "difficulty": "简单",
+    "light": true,
+    "oily": false,
+    "starchy": false,
+    "ingredients": [
+      "已吐沙蛤蜊300g",
+      "丝瓜250g",
+      "姜10g"
+    ],
+    "seasonings": [
+      "油1茶匙",
+      "盐1g"
+    ],
+    "steps": [
+      "蛤蜊刷洗干净，弃掉破损或轻敲不闭口的，丝瓜去皮切块",
+      "热油炒姜和丝瓜，加水700ml煮5分钟",
+      "下蛤蜊煮至开口后再煮3—5分钟，确保蛤肉熟透",
+      "丢弃煮后仍不开口的蛤蜊，尝味后少量加盐"
+    ],
+    "tags": [
+      "丝瓜",
+      "贝类",
+      "快手"
+    ],
+    "avoid_pair_tags": [],
+    "substitutions": [
+      "蛤蜊可换虾仁，煮至完全熟透。"
+    ],
+    "note": "购买已吐沙的新鲜蛤蜊；耗时不含额外吐沙。",
+    "brothy": false
+  },
+  {
+    "id": "carrot_mushroom_soup",
+    "name": "胡萝卜菌菇汤",
+    "category": "soup",
+    "category_label": "家常汤",
+    "role": "soup",
+    "roles": [
+      "soup"
+    ],
+    "servings": 2,
+    "time": 25,
+    "difficulty": "简单",
+    "light": true,
+    "oily": false,
+    "starchy": false,
+    "ingredients": [
+      "胡萝卜150g",
+      "口蘑100g",
+      "平菇100g",
+      "姜5g"
+    ],
+    "seasonings": [
+      "油1茶匙",
+      "盐2g"
+    ],
+    "steps": [
+      "胡萝卜切薄片，口蘑切片，平菇撕小朵",
+      "热油炒姜和胡萝卜2分钟",
+      "加入菌菇与水800ml，小火煮15分钟至全部熟透",
+      "加盐，轻搅后再煮开"
+    ],
+    "tags": [
+      "胡萝卜",
+      "菌菇",
+      "清淡",
+      "快手"
+    ],
+    "avoid_pair_tags": [],
+    "substitutions": [
+      "口蘑可换鲜香菇。"
+    ],
+    "note": "默认2人份，盐可按口味减少，搭配米饭食用。",
+    "brothy": false
   }
 ]
