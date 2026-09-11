@@ -1,10 +1,11 @@
 import {validateDishes,generateMeal,mealTime,mealKey,MODES} from './engine.js';
 import {loadState,saveState} from './storage.js';
+import {parseSharedMeal,buildShareUrl,formatMealText} from './share.js';
 const $=s=>document.querySelector(s);
 const escape=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const labels={main:'主菜',side:'配菜',soup:'汤',staple:'主食'};
 const modeLabels={random:'家常搭配',light:'清淡搭配',quick:'30分钟快手搭配'};
-let dishes=[],state,storage,toastTimer,returnFocus=null,persistWarned=false;
+let dishes=[],state,storage,toastTimer,returnFocus=null,persistWarned=false,sharedInfo={active:false,missing:[]};
 const dish=id=>dishes.find(d=>d.id===id);
 function toast(message){$('#toast').textContent=message;$('#toast').classList.add('visible');clearTimeout(toastTimer);toastTimer=setTimeout(()=>$('#toast').classList.remove('visible'),3200);}
 function persist(){if(!saveState(storage,state)&&!persistWarned){persistWarned=true;toast('浏览器暂不能保存记录，本次仍可正常使用。');}}
@@ -17,6 +18,12 @@ function render(){
   $('#prefer-favorites').checked=state.preferFavorites;
   document.querySelectorAll('[data-mode]').forEach(b=>{const active=b.dataset.mode===meal.mode;b.classList.toggle('active',active);b.setAttribute('aria-pressed',String(active));});
   $('#meal-summary').textContent=`${modeLabels[meal.mode]} · 预计${mealTime(meal,dishes)}分钟 · 米饭同步煮`;
+  const sharedBanner=$('#shared-banner');
+  if(sharedInfo.active){
+    const detail=sharedInfo.missing.length?`部分内容未找到或不适合，已自动补齐：${sharedInfo.missing.map(escape).join('、')}。你仍可以继续调整。`:'这是朋友分享的菜单，你仍可以继续调整。';
+    sharedBanner.innerHTML=`<span class="shared-banner-mark" aria-hidden="true">↗</span><span><strong>这是朋友分享的菜单</strong><br>${detail}</span>`;
+    sharedBanner.hidden=false;
+  }else{sharedBanner.hidden=true;sharedBanner.textContent='';}
   $('#dish-grid').innerHTML=Object.entries(labels).map(([role,label],i)=>{
     const d=dish(meal[role]),optional=role==='soup'&&!meal.includeSoup;
     return `<button class="dish-card ${role==='main'?'main-card':''}" data-recipe="${d.id}" aria-label="查看${escape(d.name)}菜谱${optional?'，本餐可选':''}"><span class="dish-role">${label}<span class="dish-number">0${i+1}</span></span><span class="dish-name">${escape(d.name)}${optional?'<span class="optional-tag">可选</span>':''}</span><span class="dish-meta"><span>${d.time}分钟</span><span>· ${role==='staple'?'安心吃饭':d.light?'清淡':d.oily?'偏油':'家常口味'}</span>${state.favorites.includes(d.id)?'<span aria-label="已收藏">♡</span>':''}<span class="card-arrow" aria-hidden="true">↗</span></span></button>`;
@@ -55,6 +62,20 @@ function selectMain(){
 function favorites(){const items=state.favorites.map(dish).filter(Boolean);openPanel('我的收藏',`${items.length}道喜欢的味道`,items.length?`<div class="picker-list">${items.map(d=>`<button class="picker-item" data-recipe="${d.id}"><span>${escape(d.name)}</span><small>${escape(d.category_label)} · ${d.time}分钟</small></button>`).join('')}</div>`:'<div class="empty">还没有收藏的菜。<br>打开一道菜谱，点“收藏这道菜”就能留住它。</div>');}
 function history(){openPanel('最近吃过','记住日常，也换些新口味',state.history.length?state.history.map(m=>`<article class="history-item"><time datetime="${escape(m.date)}">${new Date(m.date).toLocaleString('zh-CN',{month:'long',day:'numeric',hour:'2-digit',minute:'2-digit'})}</time><div class="history-dishes">${[m.main,m.side,m.soup,m.staple].filter(Boolean).map(id=>`<button data-recipe="${id}">${escape(dish(id).name)}</button>`).join('')}</div>${!m.soup?'<small>本餐未另做汤</small>':''}</article>`).join(''):'<div class="empty">你的第一顿晚餐，还没记下。<br>选好菜单后，点“这套今晚就吃”。</div>');}
 function confirmMeal(){if(isConfirmed())return false;const m=state.current;state.history=[{main:m.main,side:m.side,soup:m.includeSoup?m.soup:null,staple:m.staple,date:new Date().toISOString()},...state.history].slice(0,60);persist();render();toast('记下了，今晚好好吃饭。');return true;}
+async function copyText(text){
+  try{
+    if(navigator.clipboard?.writeText){await navigator.clipboard.writeText(text);return true;}
+    const textarea=document.createElement('textarea');textarea.value=text;textarea.setAttribute('readonly','');textarea.style.position='fixed';textarea.style.opacity='0';document.body.appendChild(textarea);textarea.select();const copied=document.execCommand('copy');textarea.remove();return copied;
+  }catch{return false;}
+}
+async function copyMenu(){toast(await copyText(formatMealText(state.current,dishes))?'菜单已复制，可以发给朋友。':'复制失败，请长按菜单文字进行复制。');}
+async function copyLink(){const url=buildShareUrl(location.href,state.current);toast(await copyText(url)?'分享链接已复制。':'复制失败，请手动复制地址栏链接。');}
+async function shareMenu(){
+  const url=buildShareUrl(location.href,state.current),text=formatMealText(state.current,dishes);
+  if(typeof navigator.share!=='function'){await copyLink();return;}
+  try{await navigator.share({title:'今晚吃什么',text,url});toast('已打开分享面板。');}
+  catch(error){if(error?.name!=='AbortError'){await copyLink();}}
+}
 function installEvents(){
   document.addEventListener('click',e=>{
     const b=e.target.closest('button');if(!b||b.disabled)return;
@@ -65,6 +86,7 @@ function installEvents(){
     if(b.dataset.favorite){const id=b.dataset.favorite,index=state.favorites.indexOf(id);if(index<0)state.favorites.push(id);else state.favorites.splice(index,1);persist();render();b.classList.toggle('saved',index<0);b.setAttribute('aria-pressed',String(index<0));b.textContent=index<0?'♥ 已收藏 · 点击取消':'♡ 收藏这道菜';toast(index<0?'已加入我的收藏。':'已取消收藏。');return;}
     if(b.dataset.action==='select-main')selectMain();if(b.dataset.action==='reroll')generate();
     if(b.id==='favorites-button')favorites();if(b.id==='history-button')history();if(b.id==='close-panel')closePanel();if(b.id==='confirm-meal')confirmMeal();
+    if(b.id==='copy-menu')void copyMenu();if(b.id==='copy-link')void copyLink();if(b.id==='share-menu')void shareMenu();
   });
   document.addEventListener('change',e=>{
     if(e.target.id==='prefer-favorites'){state.preferFavorites=e.target.checked;persist();if(state.preferFavorites&&!state.favorites.length)toast('收藏还是空的，先从完整菜库为你推荐。');}
@@ -88,7 +110,12 @@ async function init(){
     const response=await fetch(new URL('../data/dishes.json',import.meta.url));if(!response.ok)throw new Error('菜库加载失败');
     dishes=validateDishes(await response.json());try{storage=window.localStorage;}catch{storage=null;}
     const loaded=loadState(storage,dishes);state=loaded.state;
-    if(!state.current){state.current=generateMeal(dishes,state,{mode:'random'});if(!state.current)throw new Error('无法生成菜单');rememberGenerated();}
+    const fallback=state.current||generateMeal(dishes,state,{mode:'random'});
+    if(!fallback)throw new Error('无法生成菜单');
+    const shared=parseSharedMeal(location.search,dishes,fallback);
+    if(shared.meal){state.current=shared.meal;sharedInfo={active:true,missing:shared.missing};rememberGenerated();}
+    else{state.current=fallback;if(!loaded.state.current)rememberGenerated();}
+    $('#share-menu').hidden=typeof navigator.share!=='function';
     render();installEvents();registerAgentTools();if(loaded.warning)toast(loaded.warning);
   }catch(error){
     $('#menu-section').setAttribute('aria-busy','false');$('#meal-summary').textContent='菜单暂时没有准备好';
